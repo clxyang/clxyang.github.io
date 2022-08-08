@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="app.js"> </script>
+</head>
+<body>
+
+    <!-- Navbar section -->
+    <nav id="navbar">
+        <a href="/" id="navbar-logo">CY</a>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="#about-me" class="navbar-links">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#projects" class="navbar-links">Projects</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/" class="navbar-links">Education</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/" class="navbar-links">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- middle section -->
+    <div id="main">
+        <div id="landscape-section">
+            <div id="welcome-message">
+                <h1 id="welcome-title"> Hi! I'm Claire. </h1>
+                <p style="margin-top: 0cm;"> thanks for stopping by. </p>
+            </div>
+            <!-- <img src="wallpaperflare.com_wallpaper.jpg" width="100%"> -->
+        </div>
+
+        <!-- ABOUT ME -->
+        <section id="about-me">
+            <div>
+                <div class="title">
+                    <h2 style="margin-bottom: 5px; margin-top: 0;"> About me </h2>
+                </div>
+                <div class="body">
+                    <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I’m an upcoming sophomore at
+                        Brown University.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science and a B.A.
+                        in Visual Arts, with an emphasis in Software Engineering and Design. I'm also interested in
+                        artificial intelligence/machine learning.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I love to create, whether it’s 
+                        exploring an app idea at a Hackathon, 
+                        choreographing combos for my dance team, 
+                        or painting outside on a pretty day.
+                    </p>
+                    <p> I also love meeting new people. Let's <a class="body-link" href=""> get in touch</a>!
+                    </p>
+                </div>
+            </div>
+
+            <div id="portrait-container">
+                <img id="portrait" src="my_portrait.jpg">
+            </div>
+        </section>
+
+
+        <!-- FEATURED PROJECTS -->
+        <section id="featured-projects">
+            <div class="title">
+                <h2 style="margin-bottom: 5px;"> Featured Projects </h2>
+            </div>
+            <p class="body"> Here are some projects I've completed so far. 
+                I'm excited to add more to the list: </p>
+            <div id="project-items">
+
+                <div id="amia-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://drive.google.com/file/d/1R1T17Hv32SiUA6DiR4GWYSbVcpdpIfQx/view?usp=sharing" target="_blank"> 
+                            Disease Categorization in Text <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="amia-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('amia')"> <img src="arrow-icon-1.png"> </a>
+
+                    <div id="amia-blurb" class="p-blurb">
+                        <p> Trained a Convolutional Neural Network model for disease categorization based on
+                            consumer posts on Reddit. Achieved 95%+ accuracy in predicting the "silver standard", 
+                            being the name of the subreddit of the post. Saw a 14.33% increase in F1 score compared
+                            to a traditional Naive Bayes classifier.
+
+
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="csrsef-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://drive.google.com/file/d/1SuQrJwEdewLeMsUNewzXh5iW7ugy7nc0/view?usp=sharing" target="_blank"> 
+                            Auditory Hallucinations on Reddit <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="csrsef-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('csrsef')"> <img src="arrow-icon-1.png"> </a>
+
+                    <div id="csrsef-blurb" class="p-blurb">
+                        <p> 
+                            Gathered and analyzed 40,645 Reddit posts using Python scripts. Studied patterns in
+                            auditory hallucinations within and across different mental health diagnostic categories
+                            using semantic analysis and topic modeling.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="billcit-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://devpost.com/software/billcitizen-6g3o8f" target="_blank"> 
+                            BillCitizen <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="billcit-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('billcit')"> <img src="arrow-icon-1.png"> </a>
+
+                    <div id="billcit-blurb" class="p-blurb">
+                        <p> 
+                            Created a mobile app using React Native that decodes the legal jargon in legislative documents, allows individuals 
+                            to track local legislation in an intuitive manner, and makes it quick and easy to take
+                            tangible action. Developed the app using Node.js and TypeScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="csw-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://cswonders.com/" target="_blank"> CS Wonders <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="csw-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('csw')"> <img src="arrow-icon-1.png"> </a>
+
+                    <div id="csw-blurb" class="p-blurb">
+                        <p> lallala lalal lal al lal alalalal allalalalalala la 
+                            jfdogou hidu hi hi im claire blah blah ya oirhgosfhgodfhgodfg
+                            I am so cool cool project hi I like mango
+                        </p>
+                    </div>
+                </div>
+
+                <div id="igem-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://2019.igem.org/Team:SoundBio " target="_blank"> SoundBio iGEM Bacto-Basics <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="igem-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('igem')"> <img src="arrow-icon-1.png"> </a>
+
+                    <div id="igem-blurb" class="p-blurb">
+                        <p> 
+                            Bacto-Basics aimed to functionalize bacterial cellulose
+                            through the attachment of chromoproteins to the cellular membrane. Co-led the SoundBio iGEM
+                            team in creating a platform for precise, light-based control of this functionalization for
+                            applications including burn wound treatment and tissue scaffolding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- OTHER PROJECTS -->
+        <section id="other-projects">
+            <div class="title">
+                <h2 style="margin-bottom: 5x;"> Other Noteworthy Work </h2>
+            </div>
+            <div id="work-items">
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Travel Planner </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="csrsef-pic.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Search </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Updater </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Seamcarve </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Decision Tree </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> My Portfolio Website </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> blah blah travel planner blah blah </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
