@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <!-- Navbar section -->
+    <!-- Navbar section =========================================================== -->
     <nav id="navbar">
         <a href="/" id="navbar-logo">CY</a>
         <div class="navbar-toggle" id="mobile-menu">
@@ -27,7 +27,7 @@
                 <a href="#about-me" class="navbar-links">About</a>
             </li>
             <li class="navbar-item">
-                <a href="#projects" class="navbar-links">Projects</a>
+                <a href="#featured-projects" class="navbar-links">Projects</a>
             </li>
             <li class="navbar-item">
                 <a href="/" class="navbar-links">Education</a>
@@ -37,7 +37,7 @@
         </ul>
     </nav>
 
-    <!-- middle section -->
+    <!-- middle section =========================================================== -->
     <div id="main">
         <div id="landscape-section">
             <div id="welcome-message">
@@ -47,7 +47,7 @@
             <!-- <img src="wallpaperflare.com_wallpaper.jpg" width="100%"> -->
         </div>
 
-        <!-- ABOUT ME -->
+        <!-- ABOUT ME ===========================================================-->
         <section id="about-me">
             <div>
                 <div class="title">
@@ -77,7 +77,7 @@
         </section>
 
 
-        <!-- FEATURED PROJECTS -->
+        <!-- FEATURED PROJECTS ===========================================================-->
         <section id="featured-projects">
             <div class="title">
                 <h2 style="margin-bottom: 5px;"> Featured Projects </h2>
@@ -168,9 +168,9 @@
 
                     <div id="igem-blurb" class="p-blurb">
                         <p> 
-                            Bacto-Basics aimed to functionalize bacterial cellulose
-                            through the attachment of chromoproteins to the cellular membrane. Co-led the SoundBio iGEM
-                            team in creating a platform for precise, light-based control of this functionalization for
+                            Co-led the SoundBio iGEM team in executing our project Bacto-Basics, which aimed to functionalize
+                            bacterial cellulose through the attachment of chromoproteins to the cellular membrane. Created a
+                            platform for precise, light-based control of this functionalization for
                             applications including burn wound treatment and tissue scaffolding.
                         </p>
                     </div>
@@ -178,7 +178,7 @@
             </div>
         </section>
         
-            <!-- OTHER PROJECTS -->
+            <!-- OTHER PROJECTS ===========================================================-->
         <section id="other-projects">
             <div class="title">
                 <h2 style="margin-bottom: 5x;"> Other Noteworthy Work </h2>
@@ -191,10 +191,12 @@
                             <p> Travel Planner </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Implemented Dijkstra's algorithm to compute the most optimal
+                                route between locations on a map, prioritizing
+                                either price, time, or directness. </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="csrsef-pic.jpg" alt="">
+                    <img class="w-pic" src="icon-tp.jpg" alt="">
                 </div>
 
                 <div class="w-item">
@@ -203,10 +205,13 @@
                             <p> Search </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Created a search engine able to index XML documents
+                                and process search queries using Google's PageRank algorithm.
+                                The search engine calculates and outputs the top 10 most
+                                relevant documents for any free text query. </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img class="w-pic" src="icon-search.jpg" alt="">
                 </div>
 
                 <div class="w-item">
@@ -215,10 +220,11 @@
                             <p> Updater </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Designed a "cursor" data structure that represents an immutable tree of arbitrary
+                                size, allowing for much more efficient tree traversal and modification. </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img class="w-pic" src="icon-updater.jpg" alt="">
                 </div>
 
                 <div class="w-item">
@@ -227,10 +233,12 @@
                             <p> Seamcarve </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Used dynamic programming and memoization to resize images by removing the least
+                                important vertical "seams", determined by the difference in color
+                                between each pixel and its neighbors. </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img class="w-pic" src="icon-sc.jpg" alt="">
                 </div>
 
                 <div class="w-item">
@@ -239,10 +247,12 @@
                             <p> Decision Tree </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Wrote a program able to make accurate classifications of new items based on data
+                                read in from a dataset. Used a tree-shaped data structure, a "decision tree",
+                                to model attributes and outcomes. </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img class="w-pic" src="icon-dt.jpg" alt="">
                 </div>
 
                 <div class="w-item">
@@ -251,13 +261,74 @@
                             <p> My Portfolio Website </p>
                         </div>
                         <div class="w-blurb">
-                            <p> blah blah travel planner blah blah </p>
+                            <p> Designed and coded my own personal website (this website!) using
+                                HTML, CSS, JavaScript, and Procreate. All art is my own as well. :) </p>
                         </div>
                     </div>
-                    <img class="w-pic" src="wallpaperflare.com_wallpaper.jpg" alt="">
+                    <img class="w-pic" src="icon-portrait.jpg" alt="">
                 </div>
             </div>
+
+            <div id="art-portfolio">
+                <div id="art-heading">
+                    <p class="body"> My Art Portfolio </p>
+                    <a id="art-link" onclick="openMediaScroller()"> <img src="arrow-icon-1.png"> </a>
+                </div>
+
+                <div id="media-scroller" class="snaps-inline">
+                    <div class="art-piece">
+                        <img src="art/best-stilllife.JPG" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/watermelon-art.JPG" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/statue-art.jpg" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/ballet-art.jpeg" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/dolly-parton-art.jpg" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/eye-ocean-art.jpg" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/foot-art.JPG" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/winter-art.jpg" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/crying-art.JPG" alt="">
+                        <p> oil painting </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/mountain-case.JPG" alt="">
+                        <p> oil painting </p>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
+
+        <!-- EDUATION ===========================================================-->
+        <section id="education">
+            <div class="title">
+                <h2 style="margin-bottom: 5x;"> Education </h2>
+            </div>
+        </section>
+
     </div>
 
 </body>

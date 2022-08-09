@@ -294,9 +294,9 @@ section {
 
 #work-items {
     display: grid;
-    grid-template-columns: 303.5px 303.5px 303.5px;
-    grid-template-rows: 303.5px 303.5px 303.5px;
-    grid-gap: 1rem;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 303.5px 303.5px;
+    grid-gap: 1.5rem;
 }
 
 .w-title {
@@ -304,7 +304,7 @@ section {
     font-size: 20px;
     grid-row-start: 1;
     text-align: center;
-    filter: drop-shadow(5px 5px 3px #362953);
+    filter: drop-shadow(5px 5px 3px #221b32);
 }
 
 .w-blurb {
@@ -312,14 +312,14 @@ section {
     padding: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 22px;
 }
 
 .w-item {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    filter: drop-shadow(8px 8px 8px #1f1b3b);
+    filter: drop-shadow(8px 8px 5px #1f1b3b);
 }
 
 .w-text {
@@ -327,7 +327,7 @@ section {
     grid-column-start: 1;
     display: grid;
     grid-template-rows: 40px 180px 40px;
-    border-radius: 6px;
+    border-radius: 9px;
     opacity: 0;
     transition: all 0.2s linear;
 }
@@ -339,13 +339,78 @@ section {
     object-fit: cover;
     width: 100%;
     min-height: 100%;
-    border-radius: 6px;
+    border-radius: 9px;
 }
 
 .w-text:hover {
     opacity: 1;
-    background-color: rgba(33, 24, 53, 0.8);
+    background-color: rgba(33, 24, 53, 0.77);
 }
 
-/* OTHER-PROJECTS ====================================================================== */
+/* ART ====================================================================== */
 
+#art-portfolio {
+    position: relative;
+}
+
+#art-heading {
+    padding-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 170px 50px;
+}
+
+#art-heading > p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+#art-link > img {
+    width: 40px;;
+    color:#2b2634;
+    margin-top: 0.7rem;
+    margin-left: -0.7rem;
+    z-index: 5;
+}
+
+.art-piece {
+    display: grid;
+    grid-gap: 0.7rem;
+    border-radius: 2px;
+}
+
+.art-piece > img {
+    height: 300px;
+    margin: 0.6rem;
+}
+
+.art-piece > p {
+    text-align: center;
+    margin-top: -0.3rem;
+}
+
+#media-scroller {
+    background-color: #6c6474;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+    border-radius: 6px;
+    margin-right: -2rem;
+
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+
+    height: 0;
+    transition: all 0.5s linear;
+}
+
+#media-scroller.reveal {
+    height: auto;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
