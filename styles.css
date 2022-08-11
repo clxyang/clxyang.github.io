@@ -20,7 +20,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 }
 
 /* NAVBAR ====================================================================== */
@@ -175,10 +175,45 @@ section {
 }
 
 .title {
+    position: relative;
     text-align: left;
     font-family: 'Mulish', sans-serif;
     font-size: 25px;
     grid-column-start: 1;
+    overflow: hidden;
+}
+
+.left-title::after {
+    background-color: rgb(239, 192, 255);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.middle-title::before,
+.middle-title::after {
+    background-color: rgb(239, 192, 255);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.middle-title::before {
+    right: 0.5rem;
+    margin-left: -50%;
+}
+
+.middle-title::after {
+    left: 0.5rem;
+    margin-right: -50%;
 }
 
 .body {
@@ -213,6 +248,8 @@ section {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    /* position: relative;
+    justify-self: center; */
     align-content: center;
     filter: drop-shadow(10px 11px 8px #1d193a);
     margin-right: -10rem;
@@ -507,6 +544,43 @@ section {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20px;
+}
+
+/* SIDEBARS ====================================================================== */
+
+#email-sidebar {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    padding-bottom: 2rem;
+}
+
+#email-link-container {
+    justify-self:right;
+}
+
+#email-link {
+    align-self: right;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+    margin: 20px;
+    padding: 10px;
+    letter-spacing: 0.2rem;
+    display: block;
+
+    transition: all 0.2s linear
+}
+
+#email-link:hover {
+    /* TO-DO make it bouncy */
+    color:#c4a7dd;
 }
 
 /* CONTACT ====================================================================== */
