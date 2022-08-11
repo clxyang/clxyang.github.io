@@ -15,11 +15,9 @@ function openMediaScroller() {
     let media = document.getElementById("media-scroller");
     if (media.classList.contains("reveal")) {
         media.classList.remove("reveal");
-        console.log("hide");
     }
     else {
         media.classList.add("reveal");
-        console.log("show");
     }
 }
 

@@ -20,6 +20,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15rem;
 }
 
 /* NAVBAR ====================================================================== */
@@ -161,7 +162,7 @@ html {
 }
 
 section {
-    padding: 2rem;
+    padding: 2.5rem;
     width: 68%;
 }
 
@@ -228,7 +229,7 @@ section {
 }
 
 .p-item.reveal-margin {
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
 }
 
 .p-title {
@@ -293,10 +294,11 @@ section {
 /* OTHER-PROJECTS ====================================================================== */
 
 #work-items {
-    display: grid;
-    grid-template-columns: 260px 260px 260px;
-    grid-template-rows: 303.5px 303.5px;
-    grid-gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .w-title {
@@ -316,10 +318,13 @@ section {
 }
 
 .w-item {
+    width: 280px;
+    height: 300px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     filter: drop-shadow(8px 8px 5px #1f1b3b);
+    padding: 1rem;
 }
 
 .w-text {
@@ -354,20 +359,21 @@ section {
 }
 
 #art-heading {
-    padding-top: 1.2rem;
+    margin-top: 1.2rem;
     display: grid;
-    grid-template-columns: 170px 50px;
+    grid-template-columns: 367px 50px;
 }
 
 #art-heading > p {
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
+    text-decoration: underline;
 }
 
 #art-link > img {
     width: 40px;;
     color:#2b2634;
-    margin-top: 0.7rem;
+    margin-top: 0.8rem;
     margin-left: -0.7rem;
     z-index: 5;
 }
@@ -399,13 +405,48 @@ section {
     overflow-x: scroll;
     overscroll-behavior-inline: contain;
 
-    height: 0;
-    transition: all 0.5s linear;
+    opacity: 0;
+    top: 20%;
+    transition: all 0.3s linear;
+    margin-bottom: -23rem;
 }
 
 #media-scroller.reveal {
-    height: auto;
+    opacity: 1;
+    top: 100%;
+    margin-bottom: 0rem;
+    overscroll-behavior-inline: contain; 
+    /* TO-DO^ */
 }
+
+/* #media-scroller.unreveal {
+    animation: growUp 0.5s ease-in-out forwards
+}
+
+@keyframes growDown {
+    0% { 
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes growUp {
+    0% { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+} */
+
 
 .snaps-inline {
     scroll-snap-type: inline mandatory;
@@ -413,4 +454,76 @@ section {
 
 .snaps-inline > * {
     scroll-snap-align: start;
+}
+
+/* EDUCATION ====================================================================== */
+
+.school-grid {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    filter: drop-shadow(5px 5px 8px #1d193a);
+    justify-content: center;
+}
+
+.school-section {
+    display: grid;
+    background-color: #5f5a90;
+    grid-template-columns: clamp(250px, 20vw, 300px) clamp(350px, 50vw, 450px);
+    grid-gap: 1.5rem;
+    padding: 1.3rem;
+    border-radius: 6px;
+    margin: 1.5rem;
+    justify-self: center;
+    align-items: center;
+}
+
+.school-name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    justify-self: center;
+    padding-left: 1rem;
+
+}
+
+.school-name-grid > img {
+    width: 60px;
+    align-self: center;
+    justify-self: center;
+}
+
+#college-info {
+    display: grid;
+    grid-template-rows: 38px 50px 80px;
+}
+
+#highschool-info {
+    display: grid;
+    grid-template-rows: 38px 80px;
+}
+
+.school-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* CONTACT ====================================================================== */
+
+#contact-title {
+    display: grid;
+    grid-template-columns: 200px 500px;
+}
+
+#contact-info-button {
+    background-color: rgba(111, 96, 143, 0.4);
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact-info-button > img {
+    width: 120px;
 }
