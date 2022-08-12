@@ -37,11 +37,11 @@ html {
     z-index: 999;
     /* padding-left: 50px;
     padding-right: 50px; */
-    background-color: rgba(77, 64, 136, 0.8);
+    background-color: rgba(28, 17, 75, 0.8);
     transition: all 0.3s linear;
 }
 
-/* .navbar-container {
+/* .navbar-container {`
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -546,7 +546,43 @@ section {
     line-height: 20px;
 }
 
-/* SIDEBARS ====================================================================== */
+/* CONTACT SIDEBAR ====================================================================== */
+
+#contact-sidebar {
+    width: 40px;
+    position: fixed;
+    bottom: 3rem;
+    left: 40px;
+    right: auto;
+}
+
+#socials-list {
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    filter: drop-shadow(1.4px 1.2px 1.2px #201744);
+}
+
+.fa-brands {
+    color:rgb(240, 211, 249);
+    padding: 0.9rem;
+    transition: all 0.2s linear;
+}
+
+.fa-brands:hover {
+    color:rgb(198, 164, 208);
+}
+
+.fa-linkedin-in {
+    font-size: 1.7rem;
+}
+
+/* EMAIL SIDEBAR ====================================================================== */
 
 #email-sidebar {
     height: 100%;
@@ -572,7 +608,7 @@ section {
     text-orientation: mixed;
 
     text-decoration: none;
-    color: rgb(224, 198, 233);
+    color: rgb(240, 211, 249);
     font-size: 12px;
 
     height: 500px;
@@ -586,7 +622,7 @@ section {
 
 #email-link:hover {
     /* TO-DO make it bouncy */
-    color:#967fab;
+    color:rgb(198, 164, 208);
 }
 
 #email-link::after {
