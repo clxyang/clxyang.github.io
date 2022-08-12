@@ -184,10 +184,10 @@ section {
 }
 
 .left-title::after {
-    background-color: rgb(239, 192, 255);
+    background-color: #625c98;
     content: "";
     display: inline-block;
-    height: 1px;
+    height: 1.5px;
     position: relative;
     vertical-align: middle;
     width: 60%;
@@ -197,10 +197,10 @@ section {
 
 .middle-title::before,
 .middle-title::after {
-    background-color: rgb(239, 192, 255);
+    background-color: #625c98;
     content: "";
     display: inline-block;
-    height: 1px;
+    height: 1.5px;
     position: relative;
     vertical-align: middle;
     width: 60%;
@@ -553,25 +553,31 @@ section {
     width: 60px;
     position: fixed;
     right: 20px;
-    padding-bottom: 2rem;
+    bottom: 0;
+
+    display: flex;
 }
 
 #email-link-container {
-    justify-self:right;
+    align-self: flex-end;
+    display: flex;
 }
 
 #email-link {
-    align-self: right;
+    align-self: flex-end;
+    text-align:end;
 
+    position: relative;
     writing-mode: vertical-rl;
     text-orientation: mixed;
 
     text-decoration: none;
-    color: white;
-    font-size: 14px;
+    color: rgb(224, 198, 233);
+    font-size: 12px;
 
-    margin: 20px;
-    padding: 10px;
+    height: 500px;
+    padding-right: 10px;
+    padding-left: 30px;
     letter-spacing: 0.2rem;
     display: block;
 
@@ -580,7 +586,19 @@ section {
 
 #email-link:hover {
     /* TO-DO make it bouncy */
-    color:#c4a7dd;
+    color:#967fab;
+}
+
+#email-link::after {
+    background-color: rgb(239, 192, 255);
+    content: "";
+    display: inline-block;
+    width: 1.3px;
+    position: relative;
+    vertical-align: auto;
+    height: 33%;
+    /* left: 0.5rem;
+    margin-right: -50%; */
 }
 
 /* CONTACT ====================================================================== */
