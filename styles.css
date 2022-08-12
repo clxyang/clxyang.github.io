@@ -595,10 +595,15 @@ section {
 
 .fa-brands:hover {
     color:rgb(198, 164, 208);
+    font-size: 2.2rem;
 }
 
 .fa-linkedin-in {
     font-size: 1.7rem;
+}
+
+.fa-linkedin-in:hover {
+    font-size: 1.9rem;
 }
 
 /* EMAIL SIDEBAR ====================================================================== */
@@ -640,8 +645,8 @@ section {
 }
 
 #email-link:hover {
-    /* TO-DO make it bouncy */
     color:rgb(198, 164, 208);
+    padding-bottom: 5px;
 }
 
 #email-link::after {
