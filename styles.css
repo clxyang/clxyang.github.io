@@ -4,6 +4,7 @@ body {
     padding: 0;
     color: white;
     font-family: 'Mulish', sans-serif;
+    font-weight: bold;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 }
 
 /* NAVBAR ====================================================================== */
@@ -654,4 +655,32 @@ section {
 
 #contact-info-button > img {
     width: 120px;
+}
+
+/* CONTACT ====================================================================== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+}
+
+#footer-content {
+    color:rgb(243, 225, 251);
+    text-decoration: none;
+    font-size: 13.5px;
+    line-height: 1;
+    font-family: 'Mulish', sans-serif;
+    font-weight: lighter;
+
+    transition: all 0.2s linear;
+}
+
+#footer-content:hover {
+    color:rgb(198, 164, 208);
 }
