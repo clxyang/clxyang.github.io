@@ -678,7 +678,7 @@ footer {
     font-family: 'Mulish', sans-serif;
     font-weight: lighter;
 
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
 }
 
 #footer-content:hover {
