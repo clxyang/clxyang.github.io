@@ -292,14 +292,6 @@ section {
     grid-row-start: 2;
 }
 
-.blurb-link > img {
-    width: 40px;;
-    color:#2b2634;
-    margin-top: -1.5rem;
-    margin-left: -0.5rem;
-    z-index: 5;
-}
-
 .p-blurb {
     z-index: -5;
     color:rgb(227, 204, 237);
@@ -329,12 +321,26 @@ section {
     padding-left: 10px;
 }
 
-.arrow-button {
-    transition: all 0.3 linear;
+.blurb-link {
+    width: 28.8px;
+    height: 28.5px;
+    margin-top: -1rem;
+    margin-left: -0.3rem;
+    z-index: 5;
+
+    background-color: white;
+    border-radius: 20px;
 }
 
-.arrow-button:hover {
-    opacity: 0.7;
+.fa-circle-chevron-down {
+    color:#6b6073;
+
+    font-size: 1.8rem;
+    transition: all 0.1s linear;
+}
+
+.fa-circle-chevron-down:hover {
+    color:#4a424f;
 }
 
 /* OTHER-PROJECTS ====================================================================== */
@@ -416,12 +422,16 @@ section {
     text-decoration: underline;
 }
 
-#art-link > img {
-    width: 40px;;
-    color:#2b2634;
-    margin-top: 0.8rem;
-    margin-left: -0.7rem;
+#art-link > i {
+    width: 28.8px;
+    height: 28.5px;
     z-index: 5;
+
+    background-color: white;
+    border-radius: 20px;
+
+    margin-top: 1.2rem;
+    margin-left: -0.6rem;
 }
 
 .art-piece {
