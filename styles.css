@@ -578,8 +578,8 @@ section {
 #socials-list {
     font-size: 2rem;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 60px 60px 60px;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -599,6 +599,7 @@ section {
 }
 
 .fa-linkedin-in {
+    padding-left: 1rem;
     font-size: 1.7rem;
 }
 
