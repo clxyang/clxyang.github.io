@@ -329,6 +329,14 @@ section {
     padding-left: 10px;
 }
 
+.arrow-button {
+    transition: all 0.3 linear;
+}
+
+.arrow-button:hover {
+    opacity: 0.7;
+}
+
 /* OTHER-PROJECTS ====================================================================== */
 
 #work-items {
