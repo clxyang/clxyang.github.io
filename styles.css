@@ -138,7 +138,7 @@ html {
 /* LANDING ====================================================================== */
 
 #landscape-section {
-    background: url("wallpaperflare.com_wallpaper.jpg");
+    background: url("landscape-bg.jpg");
     background-size: cover;
     background-position: center center;
     display: grid;
