@@ -97,6 +97,10 @@ html {
     height: 100%;
 }
 
+#resume-link {
+    color:rgb(235, 171, 245);
+}
+
 .navbar-btn {
     display: flex;
     justify-content: center;
@@ -120,19 +124,18 @@ html {
     color: #fff;
 }
 
-.button:hover {
-    background: #545054;
+.navbar-links:hover {
+    color: #c49cea;
     transition: all 0.2s ease;
 }
 
-.navbar-links:hover {
-    color: #c4a7dd;
+#resume-link:hover {
+    color: #c49cea;
     transition: all 0.2s ease;
 }
 
 #navbar.hidden {
     top: -80px;
-
 }
 
 /* LANDING ====================================================================== */
@@ -571,7 +574,7 @@ section {
     width: 40px;
     position: fixed;
     bottom: 3rem;
-    left: 40px;
+    left: 30px;
     right: auto;
 }
 
