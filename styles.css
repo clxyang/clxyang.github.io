@@ -42,16 +42,13 @@ html {
     transition: all 0.3s linear;
 }
 
-/* .navbar-container {`
+ul {
+    list-style: none;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto; 
-    padding: 0 50px;
-} */
+    align-items: center;
+    justify-content: space-around;
+}
 
 #navbar-logo {
     background-color: #7f49a0;
@@ -69,64 +66,30 @@ html {
     padding-left: 50px;
 }
 
-/* do i need this */
-.fa-gem {
-    margin-right: 0.5rem;
-}
-
 .navbar-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
+    height: 100%;
     text-align: center;
     margin-left: auto;
     padding-right: 33px;
 }
 
-.navbar-item {
-    height: 80px;
-}
-
 .navbar-links {
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     padding: 0 1.3rem;
-    height: 100%;
+    transition: all 0.2s ease;
 }
 
 #resume-link {
     color:rgb(235, 171, 245);
 }
 
-.navbar-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #6c5183;
-    color: #fff;
-}
-
 .navbar-links:hover {
     color: #c49cea;
-    transition: all 0.2s ease;
 }
 
 #resume-link:hover {
@@ -137,6 +100,60 @@ html {
 #navbar.hidden {
     top: -80px;
 }
+
+#hamburger-icon {
+    right: 0;
+    margin-top: auto;
+    display: block;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open #bar2 {
+    opacity: 0;
+}
+
+.open #bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-menu {
+        display: none;
+    }
+    #navbar-logo {
+        display: none;
+    }
+  }
 
 /* LANDING ====================================================================== */
 
