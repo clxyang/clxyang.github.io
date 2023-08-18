@@ -308,6 +308,7 @@ section {
 
 .project-img {
     width: 350px;
+    height: 200px;
     /* padding: 1rem; */
     grid-row-start: 2;
 }

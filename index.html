@@ -80,8 +80,9 @@
                     <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
                         Brown University.
                     </p>
-                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science and a B.A.
-                        in Visual Arts, with a specialization in Machine Learning and Design.
+                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
+                        with a specialization in Machine Learning and Design.
+                        I'm also interested in entrepreneurship, education, and visual arts.
                     </p>
                     <p style="margin-bottom: 5px;"> I love to create, whether it’s 
                         exploring an app idea at a Hackathon, 
@@ -100,6 +101,7 @@
 
 
         <!-- FEATURED PROJECTS ===========================================================-->
+        <!-- sign language detection, dorms @ brown -->
         <section id="featured-projects">
             <div class="title">
                 <h2 class="left-title" style="margin-bottom: 5px;"> Featured Projects </h2>
@@ -108,6 +110,41 @@
                 I'm excited to add more to the list: </p>
             <div id="project-items">
 
+                <div id="asl-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://github.com/plumol/csci1470-final-project-ASL" target="_blank"> 
+                            Real-Time ASL Fingerspelling Recognition <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="asl.png">
+                    <a class="blurb-link" onclick="openBlurb('asl')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                        
+                    <div id="asl-blurb" class="p-blurb">
+                        <p> 
+                            Achieved a training and testing accuracy of >99% using a Convultional Neural Network Model trained on 
+                            over 900 images of American Sign Language alphabet letters. Integrated webcam input for real-time translation
+                            of signed letters.
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="dab-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://dorms-brown.github.io/" target="_blank"> 
+                            Dorms @ Brown Website <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="dab.png">
+                    <a class="blurb-link" onclick="openBlurb('dab')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="dab-blurb" class="p-blurb">
+                        <p> Designed and coded a platform to navigate Brown University's 50+ on-campus housing options. 
+                            Implemented TypeScript algorithms allowing users to search and filter for dorms by preferences such as room size or accommodations. 
+                            Integrated Firebase backend and Google user authentication so students can read/write reliable reviews on their dorms.
+                        </p>
+                    </div>
+                </div>
+                
                 <div id="amia-item" class="p-item">
                     <div class="p-title"> 
                         <p> <a href="https://drive.google.com/file/d/1R1T17Hv32SiUA6DiR4GWYSbVcpdpIfQx/view?usp=sharing" target="_blank"> 
@@ -165,21 +202,6 @@
                             tangible action. Developed the app using Node.js and TypeScript.
                             <br><br>
                             SynHacks Hack the World First Place Prize
-                        </p>
-                    </div>
-                </div>
-
-                <div id="csw-item" class="p-item">
-                    <div class="p-title"> 
-                        <p> <a href="https://cswonders.com/" target="_blank"> CS Wonders LLC <img class="link-pic" src="open-window.png" alt=""> </a> </p>
-                    </div>
-
-                    <img class="project-img" src="csw-pic.jpg">
-                    <a class="blurb-link" onclick="openBlurb('csw')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
-
-                    <div id="csw-blurb" class="p-blurb">
-                        <p> Assisted in building an inviting, fun, yet effective user interface for a CS online learning
-                            platform targeting younger audiences. Developed curriculum and instructed lessons in Python and Java for middle school students.
                         </p>
                     </div>
                 </div>
@@ -364,12 +386,13 @@
                     </div>
             
                     <div id="college-info">
-                        <h3> B.S. - Computer Science | B.A. - Visual Arts </h3>
+                        <h3> B.S. - Computer Science </h3>
+                        <p> Sep 2021 - Sep 2025 </p>
                         <p class="school-text"> > Specialization in AI/ML and Design 
                             <br> > GPA - 4.0
                         </p>
-                        <p class="school-text"> Clubs: Fusion Dance Company, Women in Computer Science,
-                            Fashion at Brown, Cooking Club </p>
+                        <p class="school-text"> Clubs: Fusion Dance Company, Impulse Dance Company,
+                            Women in Computer Science, Fashion at Brown, Cooking Club </p>
                     </div>
                 </div>
 
