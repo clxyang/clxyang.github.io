@@ -1,38 +1,15 @@
-#logoBar{
+#Header{
     width: 30vw;
     height: auto;
     color: rgb(19, 15, 112);
     font-family: 'Courier New', Courier, monospace;
-  }
-  #siteLogo{
-    width: 100%;
-  }
-  body {
+}
+
+body {
     display: flex;
     background-color: rgb(215, 235, 252);
-  }
-  .card {
-    background-color: rgb(163, 141, 190);
-    margin: 1rem;
-    border-color: black;
-    border-radius: 2rem;
-    height: 250px;
-    width: 200px;
-    box-shadow: 3px 3px 3px rgb(68, 68, 68);
-  }
-  
-  #staffGallery{
-    width: 70vw;
-    display: inherit;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  .galleryImage{
-    width: 150px;
-    height: 150px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    body {flex-direction: column;};
-  }
+}
+
+@media screen and (max-width: 600px) {
+body {flex-direction: column;};
+}
