@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HTML/CSS Studio</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+    </head>
+  
+    <!-- page content goes into <body> -->
+    <body>
+      <header class="header">
+        <h1> A/B Testing Appointment Scheduler UI Designs </h1>
+        <h3> Completed as part of Brown CS1300's A/B Testing assignment: </h3>
+        <p> 
+            I modified an existing webpage design for appointment scheduling. Users 
+            were given the following scheduling task:
+            <p>
+                "Schedule an appointment with Adam Ng, MD at Morristown Medical Center on April 23, 2024"
+            </p>
+
+            Then they were presented with either the version A or version B design. I analyze three factors (misclick rate,
+            time spent on webpage, and total number of clicks) on whether there is a 
+            statistically significant difference between the two versions. I observe, 
+            through the difference (or lack of difference) between these factors, 
+            whether version B demonstrates improved effectiveness over version A.
+        </p>
+      </header>
+
+      <div id="old-vs-new">
+        <h2 style="margin-top: 0;"> 1. Old Vs. New </h2>
+        <div class="sketches-container">
+            <div>
+                <p> Original Scheduling Page </p>
+                <img class="sketches-img" src="assets/original-page.png" alt="Original page design">
+            </div>
+            <div>
+                <p> Modified Scheduling Page </p>
+                <img class="sketches-img" src="assets/modified-page.png" alt="Modified page design">
+            </div>
+        </div>
+        <p>
+            The design changes I made were:
+            <ul>
+                <li>
+                    Switched the order of listing information to
+                    have the name and location as the largest and first
+                    item, while the type of appointment is smaller
+                </li>
+                <li>
+                    Darkened buttons for higher contrast
+                </li>
+                <li>
+                    Reduced gap between buttons in each appointment division
+                    so that the groupings are more obvious
+                </li>
+            </ul>
+
+            With my new version B design, I collected data by having each classmate in my
+            studio section perform the task on my computer.
+        </p>
+      </div>
+
+
+    <div id="analysis">
+        <h2> 2. Analysis </h2>
+
+        <h4> Creating Hypotheses </h4>
+        <p> 
+            After data was collected for both versions, I wrote null and alternative
+            hypotheses for each of the following 3 data types:
+        </p>
+        <ol>
+            <li style="font-weight:bold;">Misclick rate</li>
+            <ul>
+                <li>
+                    Null Hypothesis: The misclick rate is the same between version A and version B.
+                </li>
+                <li>
+                    Alternative Hypothesis: The misclick rate is different between version B and version A.
+                </li>
+                <br>
+            </ul>
+            My reasoning for the alternative hypothesis was that the misclick rate would be different (specifically lower)
+            in version B as the changes made it easier to search for the correct name and location (as they were larger), and thus
+            a user could be less likely to click the wrong one.
+            <br><br>
+            I predict that I will reject the null hypothesis for the reason stated above.
+            <br><br>
+
+            <li style="font-weight:bold;">Time on page</li>
+            <ul>
+                <li>
+                    Null Hypothesis: There is no difference in time spent on the webpage between users of version A and version B.
+                </li>
+                <li>
+                    Alternative Hypothesis: There is a difference in time spent on the webpage in version B compared to version A.
+                </li>
+                <br>
+            </ul>
+            My reasoning for the alternative hypothesis was that the time spent on the webpage would change as the 
+            difference in design could result in a user spending less or more time on it before completing the task,
+            and I am curious about the difference regardless of direction.
+            <br><br>
+            I predict that I will reject the null hypothesis as, similar to the misclick rate, the larger
+            names/locations as well as the clustered, high-constrast buttons should make it quicker to find the 
+            target appointment.
+            <br><br>
+
+            <li style="font-weight:bold;">Metric of choice: Total number of clicks</li>
+            <ul>
+                <li>
+                    Null Hypothesis: The number of total clicks per user on version A and version B are the same.
+                </li>
+                <li>
+                    Alternative Hypothesis: The number of total clicks on version B compared to version A are different.
+                </li>
+                <br>
+            </ul>
+            I chose total number of clicks as my metric of choice as I was curious if this would match the conclusion
+            about misclick rate (as it would account for multiple misclicks from one user, which mislick rate 
+            does not). 
+            <br><br>
+            My reasoning for the alternative hypothesis was that by the same logic of version B having less misclicks,
+            it should also have less total clicks than version A. Since I am not completely sure that it would be a lower number of
+            total clicks, I kept the alternative hypothesis in both directions as I am curious about a change in total clicks
+            in general.
+            <br><br>
+            I predict that I will fail to reject the null hypothesis. I think any non-button extra clicks (such as on the side of
+            the page) will remain the same, and I don't think the extra clicks made from misclicks will end up being significant as
+            I don't think there were many multiple-misclicks even in version A.
+
+            <br><br>
+        </ol>
+
+        <p> For all the following tests, I will be using a 5% significance level. </p>
+        <h4> Test 1: Misclick rate, Chi-Squared Test </h4>
+        <p>
+            I chose a chi-squared test for the misclick rate as this data was categorical
+            (a True / False representing Misclick / No Misclick). I found that the difference between
+            versions A and B *was* statistically significant.
+            <br>
+            <div class="sketches-container">
+                <div>
+                    <img style="width:300px;" src="assets/misclick-rate-data.png" alt="Misclick rate data table">
+                </div>
+                <div>
+                    <img style="width:300px;" src="assets/misclick-rate-output.png" alt="Misclick rate data output">
+                </div>
+            </div>
+            <p>
+                The calculations gave us degrees of freedom of 1, which is how many independent items we are looking
+                at (in this case, 2 - 1, as there are 2 categories being looked at). The chi-squared value represents the difference between the observed (version B) and expected (version A)
+                values. 
+                <br><br>
+                The p-value takes into account both degrees of freedom and chi-squared value in order
+                to determine the statistical significance of the observed difference (where a lower p-value indicates
+                higher statistical significance). 
+                Since p = about 0.373, and 0.373 < 0.05, 
+                the difference is statistically significant and I conclude that I can reject the null hypothesis.
+            </p>
+        </p>
+
+        <h4> Test 2: Time on page, Two-Tailed T-Test </h4>
+        <p>
+            I chose a two-tailed t-test for the time spent on the webpage as this data was continuous and 
+            I wanted to consider if there was any difference regardless of direction. I found that the 
+            difference between versions A and B was *not* statistically significant.
+            <br>
+            <br>
+            Data included 34 version A entries and 30 version B entries. Results:
+            <br>
+            <img width="300" src="assets/time-spent-output.png" alt="Time spent on page data output">
+
+            <p>
+                The calculations gave us degrees of freedom of around 32.4, which is based on how many entries were
+                recorded for each version as well as the variance between entries for each version. The t-score is then
+                computed based on the averages and variability within each group, and it represents how different the 
+                average value between the two groups are compared to what we would expect from chance. A smaller t-score 
+                indicates the difference is not likekly statistically significant, which is what we see in this case (with
+                t-score = -0.216).
+
+                <br><br>
+                This is further demonstrated by the p-value of about 0.83, indicating low statistical significance. 
+                As 0.83 > 0.05, I conclude that I fail to reject the null hypothesis.
+            </p>
+        </p>
+
+        <h4> Test 3: Total number of clicks, Two-Tailed T-Test </h4>
+        <p>
+            I also chose a two-tailed t-test for the total number of clicks as this data was continuous and 
+            I wanted to consider if there was any difference regardless of direction. I found that the 
+            difference between versions A and B was again *not* statistically significant.
+            <br>
+            <br>
+            Data included 34 version A entries and 30 version B entries. Results:
+            <br>
+            <img width="300" src="assets/click-count-output.png" alt="Total click count data output">
+
+            <p>
+                The calculations gave us degrees of freedom of around 37.1, which is based on how many entries were
+                recorded for each version as well as the variance between entries for each version. The t-score is then
+                computed based on the averages and variability within each group, and it represents how different the 
+                average value between the two groups are compared to what we would expect from chance. A smaller t-score 
+                indicates the difference is not likekly statistically significant, which is what we see in this case (with
+                t-score = -1.762).
+
+                <br><br>
+                This is further demonstrated by the p-value of about 0.086, indicating moderately low statistical significance. 
+                As 0.83 > 0.05, I conclude that I 
+                fail to reject the null hypothesis.
+            </p>
+        </p>
+    </div>
+
+    <div id="summary">
+        <h2> Summary </h2>
+        <p>
+            In summary, I collected and analyzed 34 user entries using the version A user interface, and 
+            30 user entries using the version B user interface.
+            <br><br>
+            I observed that while the misclicks
+            reduced from 7/34 to only 1/30, there was no observed change in the total number of clicks,
+            with Avg(A) = 3.088 total clicks and Avg(B) = 2.167 total clicks.
+            <br><br>
+            For both versions A and B, both the median and mode number of total clicks were 2, which is the minimum number 
+            of clicks to accurately complete the task. However, the Variance(A) was 8.75 while Variance(B) was
+            0.489. This large difference means that there were some large outliers in total clicks in version A 
+            that did not repeat in version B.
+            <br><br>
+            In terms of time spent on the page, the median for for version A was 8526.5 milliseconds, and the 
+            median for version B was 5537 milliseconds, smaller than version A's but not statistically significant
+            according to our two-tailed t-test. There was no mode, as the precision of the millisecond resulted in no entry showing up more than once.
+            <br><br>
+            Variance(A) for time spent on the page was 140609949 milliseconds, and Variance(B) was 2120204681, both very 
+            high numbers indicating a large variation of time spent between different users for both versions A and B.
+            <br><br>
+            In conclusion, the design in version B seemed to have a statistically significant impact in reducing misclicks,
+            and a small but insignificant impact in the time spent on the webpage as well as the total number of clicks.
+            This reduction in misclicks could be attributed to the order switch of name, location, and type of appointment,
+            making it easier to search the page for the target appointment and not accidentally book for the wrong location or name.
+        </p>
+    </div>
+
+    <div id="wrapup">
+        <h4> Thank you for reading!
+        </h4>
+    </div>
+
+    </body>
+  
+  </html>
