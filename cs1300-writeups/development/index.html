@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Development</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+    </head>
+  
+    <!-- page content goes into <body> -->
+    <body>
+        <header class="header">
+            <h1> Streamify - Building a Movie Aggregator in React </h1>
+            <h3> Completed as part of Brown CS1300's Development assignment: </h3>
+            <p> 
+                I designed an interface for filtering, sorting, and favoriting of
+                movies.
+            </p>
+            <img id="original-site-img" src="assets/streamify.png" >
+            <div> <a class="deploy-link" href="https://streamify-eta-neon.vercel.app/" target="_blank">
+                View the deployed site here</a> </div>
+        </header>
+
+        <div id="background">
+            <h2> 1. Competitive Analysis </h2>
+
+            <h4 style="margin-top:0;"> Comparison Chart </h4>
+            <p> Before I began, I selected 4 websites with a favoriting function to analyze the way
+                they organize their information and utilize aggregators. The websites I chose were 
+                <a href="https://www.amazon.com" target="_blank"> Amazon</a>,
+                <a href="https://www.pinterest.com" target="_blank"> Pinterest</a>,
+                <a href="https://www.nordstrom.com" target="_blank"> Nordstrom</a>, and
+                <a href="https://www.urbanoutfitters.com" target="_blank"> Urban Outfitters</a>,
+                and I captured my discoveries in the following
+                Competitive Comparison Chart:
+            </p>
+            <img class="analysis-chart" src="assets/comparison.png">
+
+            <h4 style="margin-top:0;"> Observations - Amazon </h4>
+            <p>
+                Having sublists with custom names is a successful feature adopted by all the websites I looked 
+                at as it allows for user customization and grouping of items. This is especially successful 
+                for a website like Amazon that holds a huge variety of items that can serve many purposes. 
+                I think it was effective that Amazon and Urban Outfitters use an F scan pattern for this 
+                where the user can see their different wishlists on a left banner while they view the items 
+                of the wishlist on the right.
+            </p>
+            <h5 class="example-label" > Amazon wishlist display: </h5>
+            <img class="example-img" src="assets/amazon-list.png">
+            <p>
+                Similarly for an everything-shopping site like Amazon, aggregators are important to allow 
+                users to quickly organize for a certain factor, however smaller features such as search 
+                may be less successful if it is quicker to just look at a list and find the item you are 
+                looking for. 
+            </p>
+
+            <h4 style="margin-top:0;"> Observations - Pinterest </h4>
+            <p>
+                Pinterest’s purposes are very different from Amazon as the focus is on aesthetics/inspiration 
+                rather than concrete shopping. Thus collaboration and grouping are the only factors they 
+                implemented, leaving out any sort of aggregation within Pinterest boards themselves. I like 
+                how the collaboration feature is emphasized in the visual hierarchy by placing the board 
+                authors (with a +) directly below the board name.
+            </p>
+            <h5>Pinterest board display:</h5>
+            <img class="example-img" style="width: 450px;" src="assets/pinterest.png">
+
+            <h4 style="margin-top:0;"> Observations - Nordstron & Urban Outfitters </h4>
+            <p>
+                Lastly, I looked at Nordstrom and Urban Outfitters, which have a focus on clothes unlike Amazon 
+                and Pinterest. These sites were similar in their favoriting features, the most successful 
+                in my opinion being to allow a “quick add” option from the favorite list to the cart, 
+                and to indicate if any item is out of stock (which would replace the “quick add” option). 
+                Interestingly, Nordstrom implemented a multi-select option for their favorites list which
+                may not be a very necessary feature as clicking each item to multi-select and then remove/add 
+                to cart takes the same amount of time as just clicking “remove” or “add to cart” on each 
+                item individually. Nordstrom was also the only website to have multiple filter options,
+                using a fitting checkbox UI.
+            </p>
+            <h5>Nordstrom multiple filters:</h5>
+            <img class="example-img" style="width: 150px;" src="assets/nordstrom.png">
+        </div>
+
+        <div>
+            <h2> 2. Planning my own implementation </h2>
+            <p>
+                Given these reflections, I decided on some features that
+                I wanted to implement for my own list-based interface:
+                <ul>
+                    <li> Check box list of filter options </li>
+                    <li> Sort by some measurement (such as price) </li>
+                    <li> A "quick add" button to the aggregator list </li>
+                    <li> Indication for if the item is already in the list </li>
+                </ul>
+            </p>
+            <h4 style="margin-top: 0px;">Idea</h4>
+            <p> I decided to implement a movie organizer platform, Streamify, where users are able to 
+                make lists for "favorited" movies or movies that they want to watch later. 
+                Users will be able to filter by genre and watch time (over/under 2 hour watch 
+                time). There is also a sort option to display movies by rating (taken from IMDb) or alphabetical
+                by name. 
+            </p>
+            <h4 style="margin-top: 0px;">Initial Sketch</h4>
+            <img class="example-img" style="width: 350px;" src="assets/sketch.jpg">
+        </div>
+
+        <div>
+            <h2>3. Results and Reflection</h2>
+            <p> See the final result for Streamify <a class="deploy-link" href="https://streamify-eta-neon.vercel.app/" target="_blank">
+                here</a>.  </p>
+
+            <p> With more time, I would like to add the option to create and maintain multiple customized
+                lists using the F scan pattern from the Amazon example. Additionally, I would like to 
+                pull the movie cards from a large database of movies and add a search feature for users to quickly
+                find any title they want to save to a list.
+            </p>
+        </div>
+     
+
+        <div id="wrapup">
+            <h4> Thank you for reading! 
+            </h4>
+        </div>
+
+    </body>
+  
+  </html>

@@ -1,0 +1,75 @@
+/* GENERAL ================================================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 252, 245);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    width: 68%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+h4 {
+    font-size: large;
+    padding-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+h5 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+header {
+    padding-top: 3.5rem;
+    text-align: center;
+}
+
+#original-site-img {
+    width: 460px;
+}
+
+.deploy-link {
+    text-align:left;
+}
+
+.analysis-chart {
+    width: 540px;
+    background-color: #1e1e1e;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* COMPETITIVE ANALYSIS ================================================== */
+
+#background {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+.col-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .col-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+} */
+
+.example-img {
+    width: 300px;
+    background-color:rgb(187, 185, 179);
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
