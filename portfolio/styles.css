@@ -1,6 +1,7 @@
 :root {
     --dark-text: rgb(28, 6, 47);
     --nav-purple: #6a3e85;
+    --nav-hover: rgb(198, 164, 208);
 }
 
 body {
@@ -156,6 +157,7 @@ ul {
 section {
     padding: 2.5rem;
     width: 80%;
+    padding-top: 4rem;
 }
 
 /* CONTACT SIDEBAR ====================================================================== */
@@ -225,82 +227,6 @@ section {
     filter: drop-shadow(11px 11px 5px #eab0df);
 }
 
-/* ABOUT-ME ====================================================================== */
-
-.about-me {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
-}
-
-.title {
-    position: relative;
-    text-align: left;
-    /* font-family: 'Mulish', sans-serif; */
-    font-size: 25px;
-    grid-column-start: 1;
-    overflow: hidden;
-}
-
-.left-title::after {
-    background-color: #625c98;
-    content: "";
-    display: inline-block;
-    height: 1.5px;
-    position: relative;
-    vertical-align: middle;
-    width: 100%;
-    left: 0.5rem;
-    margin-right: -50%;
-}
-
-.middle-title::before,
-.middle-title::after {
-    background-color: #625c98;
-    content: "";
-    display: inline-block;
-    height: 1.5px;
-    position: relative;
-    vertical-align: middle;
-    width: 60%;
-}
-
-.middle-title::before {
-    right: 0.5rem;
-    margin-left: -50%;
-}
-
-.middle-title::after {
-    left: 0.5rem;
-    margin-right: -50%;
-}
-
-.body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    grid-column-start: 1;
-}
-
-#portrait {
-    width: 315px;
-    object-fit: contain;
-    border-radius: 6px;
-    filter: drop-shadow(10px 11px 8px #1d193a);
-}
-
-#portrait-container {
-    display: flex;
-    grid-column-start: 2;
-}
-
-.body-link {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 28px;
-    color: rgb(202, 179, 212)
-}
-
 /* FEATURED-PROJECTS ====================================================================== */
 
 #project-items {
@@ -329,6 +255,12 @@ section {
     width: clamp(300px, 100%, 600px);
     /* filter: drop-shadow(10px 1px 8px #1d193a); */
     border-radius: 1.3rem;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.project-img:hover {
+    opacity: 70%;
+    -webkit-transform: scale(1.05);
 }
 
 .title-container {
@@ -398,17 +330,21 @@ section {
 }
 
 .fa-circle-chevron-down {
-    color:#6b6073;
+    color: #765e86;
 
     font-size: 1.8rem;
     transition: all 0.1s linear;
 }
 
 .fa-circle-chevron-down:hover {
-    color:#4a424f;
+    color: #9d8da7;
 }
 
 /* OTHER-PROJECTS ====================================================================== */
+
+#other-projects {
+    padding-top: 0px;
+}
 
 #work-items {
     display: flex;
@@ -574,6 +510,82 @@ section {
 
 .snaps-inline > * {
     scroll-snap-align: start;
+}
+
+/* ABOUT-ME ====================================================================== */
+
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.title {
+    position: relative;
+    text-align: left;
+    /* font-family: 'Mulish', sans-serif; */
+    font-size: 25px;
+    grid-column-start: 1;
+    overflow: hidden;
+}
+
+.left-title::after {
+    background-color: #625c98;
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.middle-title::before,
+.middle-title::after {
+    background-color: #625c98;
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.middle-title::before {
+    right: 0.5rem;
+    margin-left: -50%;
+}
+
+.middle-title::after {
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    grid-column-start: 1;
+}
+
+#portrait {
+    width: 315px;
+    object-fit: contain;
+    border-radius: 6px;
+    filter: drop-shadow(5px 5px 8px #4b364c);
+}
+
+#portrait-container {
+    display: flex;
+    grid-column-start: 2;
+}
+
+.body-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--nav-purple);
 }
 
 /* EMAIL SIDEBAR ====================================================================== */
