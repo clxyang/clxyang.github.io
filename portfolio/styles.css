@@ -514,7 +514,7 @@ section {
 
 /* ABOUT-ME ====================================================================== */
 
-.about-me {
+#about-me {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
