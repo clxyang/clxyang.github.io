@@ -590,7 +590,7 @@ section {
 #contact-sidebar {
     width: 40px;
     position: fixed;
-    bottom: 3rem;
+    bottom: 0rem;
     left: 30px;
     right: auto;
 }
