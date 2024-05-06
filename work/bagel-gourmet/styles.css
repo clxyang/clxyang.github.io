@@ -163,7 +163,7 @@ ul {
   }
 
 section {
-    padding: 2.5rem;
+    padding-top: 1.5rem;
     width: 75%;
 }
 
@@ -211,10 +211,6 @@ section {
 
 /* GENERAL */
 
-h2 {
-    padding-top: 2rem;
-}
-
 h4 {
     font-size: large;
     padding-top: 1rem;
@@ -235,19 +231,17 @@ header {
 .section-title {
     padding-top: 0;
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
 }
 
-
-.section-title::after {
-    background-color: #625c98;
-    content: "";
-    display: inline-block;
-    height: 1.5px;
-    position: relative;
-    vertical-align: middle;
-    width: 70%;
-    left: 0.5rem;
-    /* margin-right: -50%; */
+.section-line {
+    outline-style: groove;
+    outline-width: 0.9px;
+    outline-color:#625c98;
+    height: 0px;
+    align-self: center;
 }
 
 /* PART 1: BACKGROUND ================================================== */
@@ -259,6 +253,7 @@ header {
 
 #original-site-img {
     width: 350px;
+
 }
 
 .curr-example-img {
@@ -291,10 +286,14 @@ header {
 }
 
 .wireframe-section {
-    width: 550px;
+    width: 100%;
     padding: 1rem;
-    color: white;
-    background-color: #1e1e1e;
+    /* color: white; */
+    /* background-color: #1e1e1e; */
+    display: flex;
+    gap: 2rem;
+    outline-style: groove;
+    overflow: scroll;
 }
 
 .wireframe-img {

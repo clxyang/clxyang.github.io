@@ -84,29 +84,22 @@
         </header>
     
         <section id="problem">
-            <h2 class="section-title"> Background </h2>
+            <div class="section-title"> <h2>Background</h2> <span class="section-line"></span> </div>
     
             <h4 style="margin-top:0;"> Problem </h4>
-            <p> When thinking about a webpage to redesign, Bagel Gourmet's website came to m
-                The design stood out to me as I liked the fun personality and welcoming message, so I thought it would be
-                interesting to use as a case study to improve their consistency and presentation which were impacting their accessibility rating. 
-            </p>
+            <p> Bagel Gourmet's original website had a fun personality and welcoming message, but unfortunately had a few
+                accessibility issues and additionally was not responsive to different screen sizes such as a mobile device. 
+                I thought it would be interesting to use as a case study to improve their consistency and 
+                presentation while preserving the original charm and fun characteristics. </p>
+            
+                
             <a href="https://web.archive.org/web/20231207200946/http://bagelgourmetcafe.com/" target="_blank"> See the original webpage here.</a>
             <img id="original-site-img" src="assets/original_site.png" alt="Screenshot of the current Bagel Gourmet Cafe website">
     
-            <h4> Design Pain Points </h4>
-            
-        
-            <p style="font-weight: bold; padding-top: 0.6rem;"> Summary using WebAIM WAVE detection: </p>
-            <ol style="margin: 0;">
-                <li> Errors: Missing page titles/headings </li>
-                <li> Contrast errors: 12 very low contrast errors </li>
-                <li> Alerts: No page regions, 5x very small text, 2x underlined text, 10x layout tables </li>
-                <li> Features: 18x Null or empty alternative text</li>
-            </ol>
+            <h4> Objective </h4>
             <p> 
-                I found that WebAIM WAVE detected a high number of text readability issues with contrast and small text, 
-                which I would agree with. The page is also difficult to navigate because of there being no clear page title 
+                I found that WebAIM WAVE detected a high number of text readability issues with contrast and small text. 
+                The page is also difficult to navigate because of there being no clear page title 
                 or sections with headings. Lastly, the images don’t have alternative text which can also be an accessibility 
                 issue even though the images don’t necessarily play a huge role in the page. <br>
                 <br>
@@ -116,7 +109,7 @@
     
     
         <section id="visual-redesign">
-            <h2> 2. Visual Redesign: Sketches, Style Guide, Wireframing </h2>
+            <div class="section-title"> <h2>Design Iteration</h2> <span class="section-line"></span> </div>
     
             <div class="sketches-container" style="margin-top:0;">
                 <div>
@@ -139,19 +132,25 @@
                 </div>
             </div>
     
-            <h4> Low-Fidelity Wireframes </h4>
+            <h4> Polishing the Vision </h4>
             <p> 
-                Now that I had a base sketch, I used Figma to create low-fidelity wireframes for desktop, 
+                Now that I had a base sketch, I went over to Figma to create wireframes for desktop, 
                 tablet, and mobile screen sizes.
             </p>
     
             <div class="wireframe-section">
-                <p style="font-weight: bold;"> Desktop: </p>
-                <img class="wireframe-img" src="assets/lofi-desktop.png" alt="Desktop low-fidelity wireframe">
-                <p style="font-weight: bold;"> Tablet: </p>
-                <img class="wireframe-img" src="assets/lofi-tablet.png" alt="Tablet low-fidelity wireframe">
-                <p style="font-weight: bold;"> Mobile: </p>
-                <img class="wireframe-img" src="assets/lofi-mobile.png" alt="Mobile low-fidelity wireframe">
+                <div>
+                    <p style="font-weight: bold;"> Desktop: </p>
+                    <img class="wireframe-img" src="assets/lofi-desktop.png" alt="Desktop low-fidelity wireframe">
+                </div>
+                <div>
+                    <p style="font-weight: bold;"> Tablet: </p>
+                    <img class="wireframe-img" src="assets/lofi-tablet.png" alt="Tablet low-fidelity wireframe">
+                </div>
+                <div>
+                    <p style="font-weight: bold;"> Mobile: </p>
+                    <img class="wireframe-img" src="assets/lofi-mobile.png" alt="Mobile low-fidelity wireframe">
+                </div>
             </div>
     
             <h4> Visual Design Style Guide </h4>
@@ -160,10 +159,6 @@
                 style guide that displayed my reusable colors, typography, icons, and button states.
             </p>
             <img id="style-guide-img" src="assets/style-guide.png" alt="Visual design style guide">
-    
-            <p> 
-                This eased the process of finalizing high-fidelity wireframes for each screen size.
-            </p>
     
             <h4> High-Fidelity Wireframes </h4>
     
@@ -178,11 +173,10 @@
         </section>
     
         <section id="responsive-redesign">
-            <h2> 3. Responsive Redesign: Translating to HTML/CSS </h2>
+            <div class="section-title"> <h2> Translating to HTML/CSS </h2> <span class="section-line"></span> </div> 
             <p> 
-                The final step was to create the page using HTML and CSS. I also used
-                a few lines of JavaScript to allow for the opening/closing of the hamburger
-                menu on tablet/mobile screen sizes. <br>
+                The final step was to create the page using HTML and CSS, and a few lines of JavaScript or the opening/closing 
+                of the hamburger menu on tablet/mobile screen sizes. <br>
                 <br>
                 The site should be fully responsive on a phone (~375x667px), 
                 a tablet (~768x1024px), a large computer (~3840x2160px), and any dimensions in between.
@@ -190,10 +184,12 @@
                 <br>
                 You can checkout the redesigned Bagel Gourmet home page <a href="https://clxyang.github.io/cs1300-bagel-gourmet/" target="_blank">HERE</a>. <br>
                 <br>
-                Snippets below, resized in Chrome:
+                Demo below, resizing in Chrome:
+                <video width="640" height="360" controls>
+                    <source src="re-re-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <div class="sketches-container" style="gap:1rem;">
-                    <img class="wireframe-img" src="assets/final-expanded.png" alt="Screenshot of final website, expanded">
-                    <img class="wireframe-img" src="assets/final-mobile.png" alt="Screenshot of final website mobile dimensions">
                 </div>
     
             </p>

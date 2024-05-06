@@ -24,6 +24,24 @@ html {
     margin-bottom: 8rem;
 }
 
+.section-title {
+    padding-top: 0;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    font-size: 25px;
+}
+
+.section-line {
+    outline-style: groove;
+    outline-width: 0.9px;
+    outline-color: var(--nav-purple);
+    height: 0px;
+    align-self: center;
+}
+
 /* NAVBAR ====================================================================== */
 
 #navbar {
@@ -149,7 +167,8 @@ html {
   }
 
 section {
-    padding: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     width: 80%;
     padding-top: 4rem;
 }
@@ -299,10 +318,10 @@ section {
         opacity: 1;
     }
     50% {
-        opacity: 1;
+        opacity: 0;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -312,26 +331,24 @@ section {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.2rem;
     /* position: relative;
     justify-self: center; */
     align-content: center;
-    margin-right: -10rem;
 }
 
 .p-item {
     display: grid;
-    width: clamp(300px, 40%, 600px);
+    width: clamp(250px, 45%, 600px);
     height: auto;
     /* grid-template-rows: 60.5px 210.04px 0.5fr; */
     /* background-color: rgb(195, 184, 209); */
     /* margin-right: 3rem; */
-    margin-top: 1.5rem;
-    border-radius: 1rem;
+    margin-top: 1.2rem;
 }
 
 .project-img {
-    width: clamp(300px, 100%, 600px);
+    width: clamp(250px, 100%, 600px);
     /* filter: drop-shadow(10px 1px 8px #1d193a); */
     border-radius: 1.3rem;
     -webkit-transition: all .2s ease-in-out;
@@ -340,6 +357,15 @@ section {
 .project-img:hover {
     opacity: 70%;
     -webkit-transform: scale(1.05);
+}
+
+@media screen and (max-width: 680px) {
+    .p-item {
+        width: 460px;
+    }
+    .project-img {
+        width: 460px;
+    }
 }
 
 .title-container {
@@ -598,15 +624,7 @@ section {
     grid-gap: 30px;
 }
 
-.title {
-    position: relative;
-    text-align: left;
-    font-size: 25px;
-    grid-column-start: 1;
-    overflow: hidden;
-}
-
-.left-title::after {
+/* .left-title::after {
     background-color: #625c98;
     content: "";
     display: inline-block;
@@ -616,7 +634,7 @@ section {
     width: 100%;
     left: 0.5rem;
     margin-right: -50%;
-}
+} */
 
 .middle-title::before,
 .middle-title::after {

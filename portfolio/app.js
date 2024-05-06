@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (letterIndex >= 0) {
                     theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
                     letterIndex--;
-                    setTimeout(writeLetters, 100); // Adjust the timeout for deletion speed
+                    setTimeout(writeLetters, 80); // Adjust the timeout for deletion speed
                 } else {
                     isDeleting = false;
                     switchWord();
@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (letterIndex <= pieces.length) {
                     theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
                     letterIndex++;
-                    setTimeout(writeLetters, 100); // Adjust the timeout for typing speed
+                    setTimeout(writeLetters, 80); // Adjust the timeout for typing speed
                 } else {
                     isDeleting = true;
-                    setTimeout(writeLetters, 1000); // Adjust the timeout before starting deletion
+                    setTimeout(writeLetters, 2000); // Adjust the timeout before starting deletion
                 }
             }
         };
