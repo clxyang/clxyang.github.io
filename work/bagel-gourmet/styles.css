@@ -43,7 +43,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    position:fixed;
+    position: absolute;
     top: 0px;
     z-index: 999;
 

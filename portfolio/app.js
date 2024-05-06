@@ -39,7 +39,7 @@ function toggleNavBar() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const theWords = ["studying CS at Brown", "making choreo for my dance team", "playing the NYT Strands"];
+    const theWords = ["making choreo for my dance team", "studying CS at Brown", "playing the NYT Strands"];
     let theBox = document.getElementById("word");
     console.log(theBox);
     let idx = 0;
