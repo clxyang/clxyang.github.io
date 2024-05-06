@@ -158,10 +158,10 @@ html {
   }
 
 section {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    /* padding-top: 2.5rem; */
+    /* padding-bottom: 2.5rem; */
     width: 80%;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 /* CONTACT SIDEBAR ====================================================================== */
@@ -291,6 +291,7 @@ header {
     gap: 2rem;
     outline-style: groove;
     overflow: scroll;
+    outline-color: --nav-purple;
 }
 
 .wireframe-img {
@@ -309,4 +310,8 @@ header {
         flex-direction: column;
         gap: 1rem;
     }
+}
+
+.video-embed {
+    margin-top: 2rem;
 }
