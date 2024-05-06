@@ -36,6 +36,11 @@ ul li {
     margin-bottom: 10px;
 }
 
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -175,7 +180,7 @@ section {
     /* padding-top: 2.5rem; */
     /* padding-bottom: 2.5rem; */
     width: 80%;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 /* CONTACT SIDEBAR ====================================================================== */

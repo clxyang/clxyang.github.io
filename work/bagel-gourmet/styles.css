@@ -33,6 +33,16 @@ html {
     width: 75%;
 }
 
+ol {
+    margin-top: 10px;
+    padding-top: 0;
+    line-height: 1.3rem;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
 /* NAVBAR ====================================================================== */
 
 #navbar {
