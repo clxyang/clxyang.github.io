@@ -37,8 +37,7 @@ html {
     position:fixed;
     top: 0px;
     z-index: 999;
-    /* padding-left: 50px;
-    padding-right: 50px; */
+
     background-color: #f6f5f4;
     transition: all 0.3s linear;
 }
