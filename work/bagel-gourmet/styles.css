@@ -43,18 +43,12 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    position: absolute;
-    top: 20px;
+    position:fixed;
+    top: 0px;
     z-index: 999;
-    transition: all 0.3s linear;
-}
 
-ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: #f6f5f4;
+    transition: all 0.3s linear;
 }
 
 #navbar-logo {
@@ -82,6 +76,7 @@ ul {
     text-align: center;
     margin-left: auto;
     padding-right: 53px;
+    justify-content: space-around;
 }
 
 .navbar-links {
@@ -163,8 +158,10 @@ ul {
   }
 
 section {
-    padding-top: 1.5rem;
-    width: 75%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 80%;
+    padding-top: 4rem;
 }
 
 /* CONTACT SIDEBAR ====================================================================== */
