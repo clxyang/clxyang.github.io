@@ -11,6 +11,11 @@ body {
     font-family: "Space Grotesk", sans-serif;
     /* font-family: 'Mulish', sans-serif; */
     font-weight: normal;
+    font-size: medium;
+}
+
+p {
+    line-height: 170%;
 }
 
 html {
@@ -25,7 +30,7 @@ html {
 }
 
 .section {
-    width: 68%;
+    width: 75%;
 }
 
 /* NAVBAR ====================================================================== */
@@ -159,7 +164,7 @@ ul {
 
 section {
     padding: 2.5rem;
-    width: 80%;
+    width: 75%;
 }
 
 /* CONTACT SIDEBAR ====================================================================== */
@@ -219,7 +224,7 @@ h4 {
 header {
     padding-top: 10rem;
     text-align: left;
-    width: 68%;
+    width: 75%;
 }
 
 .header-top {
@@ -227,9 +232,27 @@ header {
     font-size: medium;
 }
 
+.section-title {
+    padding-top: 0;
+    margin-top: 1rem;
+}
+
+
+.section-title::after {
+    background-color: #625c98;
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 70%;
+    left: 0.5rem;
+    /* margin-right: -50%; */
+}
+
 /* PART 1: BACKGROUND ================================================== */
 
-#background {
+#problem {
     display: flex;
     flex-direction: column;
 }
@@ -258,7 +281,7 @@ header {
 
 /* PART 2: VISUAL REDESIGN ================================================== */
 .sketches-img {
-    width: 450px;
+    width: 100%;
 }
 
 .sketches-container {
@@ -280,12 +303,12 @@ header {
 }
 
 #style-guide-img {
-    width: 550px;
+    width: 70%;
     background-color: #1e1e1e;
     padding: 1rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
     .sketches-container {
         flex-direction: column;
         gap: 1rem;
