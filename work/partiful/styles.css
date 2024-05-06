@@ -22,6 +22,20 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    border-radius: 0.5rem;
+}
+
+ul {
+    margin-top: 10px;
+    padding-top: 0;
+    line-height: 1.3rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -251,7 +265,7 @@ header {
 .image-container {
     justify-content: center;
     text-align: center;
-    padding-top: 1rem;
+    paddin-top: 1rem;
 }
 
 .image-wrapper {
@@ -259,7 +273,7 @@ header {
 }
 
 #original-site-img {
-    width: 60%;
+    width: 80%;
     border-radius: 0.5rem;
 }
 
@@ -277,9 +291,20 @@ header {
 }
 
 /* PART 2: VISUAL REDESIGN ================================================== */
+
+.laundry-list-container {
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 2rem;
+}
+
+.cutout-section {
+    align-content: center;
+}
+
 .sketches-img {
     width: 100%;
-    border-radius: 0.5rem;
 }
 
 .sketches-container {
@@ -302,15 +327,25 @@ header {
 }
 
 .wireframe-img {
-    max-width: 550px;
-    max-height: 500px;
+    height: 300px;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
 }
 
 #style-guide-img {
     width: 70%;
     background-color: #1e1e1e;
     padding: 1rem;
-    border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 780px) {
@@ -322,5 +357,4 @@ header {
 
 .video-embed {
     margin-top: 2rem;
-    border-radius: 0.5rem;
 }
