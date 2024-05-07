@@ -77,18 +77,15 @@
             <div class="welcome-message">
                 <h1 class="welcome-title"> Hi! I'm Claire. </h1>
                 <p class="welcome-text"> I am currently <br> <span id="word"> </span></p>
-                <!-- <div class="scroll-container">
-                    <div class="text-box">
-                        <ul>
-                            <li> I'm an aspiring software engineer currently studying CS at Brown </li>
-                            <li> I love the NYT daily puzzles and playing the Strands </li>
-                            <li> I'm a contemporary, jazz, and hip hop dancer </li>
-                            <li> I really want to learn digital art and animation!!! </li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
             <img class="portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+        </div>
+        <div class="mobile-landscape-section">
+            <div class="mobile-welcome-message">
+                <h1 class="mobile-welcome-title"> Hi! I'm Claire. </h1>
+                <img class="mobile-portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+            </div>
+            <p class="mobile-welcome-text"> I am currently <br> <span id="mobile-word"> </span></p>
         </div>
 
         <!-- ABOUT ME ===========================================================-->
@@ -223,33 +220,35 @@
         <section id="about-me">
             <div>
                 <div class="section-title"> <h2> about me </h2> <span class="section-line"></span> </div>
-                <div class="body">
-                    <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
-                        Brown University.
-                    </p>
-                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
-                        with a specialization in Software Engineering and Design.
-                        I'm also interested in entrepreneurship, education, and visual arts.
-                    </p>
-                    <p style="margin-bottom: 5px;"> I hope to explore how technology can be used to unite
-                        and support communities through innovative, accessible products.
-                        I want to learn more about how human-centered design plays a role
-                        in effectively building these products, as well as how artificial intelligence can
-                        responsibly be used as a tool for inclusion.
-                    </p>
-                    <p style="margin-bottom: 5px;"> I love to create, whether it’s 
-                        exploring an app idea at a Hackathon, 
-                        choreographing combos for my dance team, 
-                        or painting outside on a pretty day.
-                    </p>
-                    <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
-                    </p>
+                <div class="about-container">
+                    <div class="body">
+                        <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
+                            Brown University.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
+                            with a specialization in Software Engineering and Design.
+                            I'm also interested in entrepreneurship, education, and visual arts.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I hope to explore how technology can be used to unite
+                            and support communities through innovative, accessible products.
+                            I want to learn more about how human-centered design plays a role
+                            in effectively building these products, as well as how artificial intelligence can
+                            responsibly be used as a tool for inclusion.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I love to create, whether it’s 
+                            exploring an app idea at a Hackathon, 
+                            choreographing combos for my dance team, 
+                            or painting outside on a pretty day.
+                        </p>
+                        <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
+                        </p>
+                    </div>
+                    <div id="portrait-container">
+                        <img id="portrait" src="my_portrait.jpg">
+                    </div>
                 </div>
             </div>
 
-            <div id="portrait-container">
-                <img id="portrait" src="my_portrait.jpg">
-            </div>
         </section>
        
 

@@ -223,20 +223,20 @@ section {
     row-gap: 1rem;
     width: 68%;
     justify-items: center;
+    align-items: center;
 }
 
 .portrait {
-    width: 350px;
+    width: clamp(350px, 50%, 600px);
     height: auto;
 }
 
 .welcome-message {
-    padding-top: 3rem;
     font-size: 1.6rem;
     color: var(--dark-text);
     text-align: center;
-    height: 3vw;
     width: 30vw;
+    align-items: center;
 }
 
 .welcome-title {
@@ -325,6 +325,51 @@ section {
     }
 }
 
+.mobile-landscape-section {
+    padding-top: 6rem;
+    display: flex;
+    row-gap: 1rem;
+    width: 68%;
+    justify-items: center;
+    display: none;
+    text-align: center;
+}
+
+.mobile-portrait {
+    width: 95%;
+    height: auto;
+}
+
+.mobile-welcome-message {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+    font-size: 1.6rem;
+    color: var(--dark-text);
+    align-items: center;
+}
+
+.mobile-welcome-title {
+    font-size: 2.5rem;
+    text-align: right;
+    text-justify: center;
+    filter: drop-shadow(11px 11px 5px #eab0df);
+    margin-right: 1rem;
+}
+
+.mobile-welcome-text {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .landscape-section {
+        display: none;
+    }
+    .mobile-landscape-section {
+        display: block;
+    }
+}
+
 /* FEATURED-PROJECTS ====================================================================== */
 
 #project-items {
@@ -361,10 +406,10 @@ section {
 
 @media screen and (max-width: 680px) {
     .p-item {
-        width: 460px;
+        width: 100%;
     }
     .project-img {
-        width: 460px;
+        width: 100%;
     }
 }
 
@@ -618,7 +663,7 @@ section {
 
 /* ABOUT-ME ====================================================================== */
 
-#about-me {
+.about-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
@@ -683,6 +728,20 @@ section {
     color: var(--nav-purple);
 }
 
+@media screen and (max-width: 800px) {
+    .body {
+        margin-top: -1rem;
+        margin-bottom: 1.5rem;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        grid-gap: 0;
+        align-items: center;
+    }
+}
+
 /* EMAIL SIDEBAR ====================================================================== */
 
 #email-sidebar {
@@ -737,6 +796,13 @@ section {
     height: 33%;
     /* left: 0.5rem;
     margin-right: -50%; */
+}
+
+
+@media screen and (max-width: 700px) {
+    #email-sidebar {
+        display: none;
+    }
 }
 
 /* CONTACT ====================================================================== */
