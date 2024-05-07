@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Inter:wght@300&family=Jomolhari&family=Mulish:wght@200;700&family=Open+Sans:wght@300;400;442&family=Roboto+Mono:wght@300;400;500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75ad4c9b6c.js" crossorigin="anonymous"></script>
+    <script src="app.js"> </script>
+</head>
+
+<body>
+
+    <!-- Navbar section =========================================================== -->
+    <nav id="navbar">
+        <a href="/portfolio/" id="navbar-logo">CY</a>
+        <div class="navbar-toggle" class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="/portfolio/#work" class="navbar-links">work</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/portfolio/#about-me" class="navbar-links">about</a>
+            </li>
+
+            <ul id="socials-list"> 
+                <li>
+                    <a href="https://www.linkedin.com/in/clxyang" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/claire._y/" target="_blank"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/clxyang" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <!-- <div id="hamburger-icon">
+        <div id="bar-1"></div>
+        <div id="bar-2"></div>
+        <div id="bar-3"></div>
+        <ul class="mobile-menu">
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#featured-projects">Projects</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1A4kaeJYUIlfXuiwOg8UfJGh-WRoIATpk/view?usp=sharing"
+                id="resume-link" class="navbar-links" target="_blank"> Resume</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <div class="main">
+        <header class="header">
+            <h3 class="header-top"> Full-Stack React Application (Group) </h3>
+            <h1> Dorms at Brown </h1>
+            <p>
+                My team designed and coded a platform to navigate Brown University's 50+ on-campus 
+                housing options. We implemented TypeScript algorithms allowing users to search and 
+                filter for dorms by preferences such as room size or accommodations, and we integrated 
+                Firebase backend and Google user authentication so students can read/write reliable 
+                reviews on their dorms. See our GitHub repo <a href="https://github.com/Dorms-Brown/Dorms-Brown">here</a>.
+            </p>
+            <p>
+                My role focused on designing the pages of the application in Figma as well as implementing
+                the ranking and sorting algorithms in TypeScript.
+            </p>
+        </header>
+    
+        <section id="problem">
+            <div class="section-title"> <h2>Overview</h2> <span class="section-line"></span> </div>
+    
+            <h4 style="margin-top:0;"> Background & Objective </h4>
+            <p> 
+                Every year during Brown's housing lottery for on-campus dorm selection, students are forced to
+                rely on word of mouth and non up-to-date information to make crucial decisions surrounding their 
+                housing for the upcoming year. Our solution for making housing research more accessible was 
+                Dorms at Brown (D@B), a comprehensive dorm review website akin to Courses @ Brown (C@B).
+            </p>
+            <p style="margin-top: 0;"> This platform allows students to share detailed reviews and ratings 
+                on various aspects of dorm life, such as cleanliness, facilities, and location.
+                By aggregating this data, our website also offers an overall "star" rating for each dorm, 
+                facilitating informed decision-making during the housing lottery process. With this resource, we 
+                seek to alleviate the stress of dorm selection by providing access to valuable dorm-related 
+                information for all students participating in the housing lottery. </p>
+        </section>
+    
+    
+        <section>
+            <div class="section-title"> <h2> Frontend Design Choices </h2> <span class="section-line"></span> </div>
+            <h4 style="margin-top:0;"> Figma Designs </h4>
+            <p> 
+                I aimed to bring a sense of familiarity to Dorms @ Brown by following the landing Page
+                layout of Courses @ Brown. I wanted to make the flow very intuitive in terms of finding the 
+                dorms that apply to your class year, so I made these the main focus of the landing page.
+                Additionally, I took inspiration from AirBNB's layout for a clean and comprehensive 
+                dorm listing design.
+            </p>
+
+            <div class="two-col-grid">
+                <img class="grid-img" src="assets/dab-home.png" alt="">
+                <img class="grid-img" src="assets/dab-search.png" alt="">
+            </div>
+
+            <p>On the frontend, we used React.js with TypeScript and Tailwind CSS for styling.
+                This combination allowed us to implement components that could be easily reused throughout the codebase.
+            </p>
+
+            <h4 style="margin-top:0;"> Major Components </h4>
+            <ol>
+                <li>
+                    <span style="font-weight: bold;"> Main: </span> The main Dorms @ Brown page that holds all the other components.
+                </li>
+                <li>
+                    <span style="font-weight: bold;"> Dorms: </span> Loads a set of dorms (either freshman housing, non-freshman housing, or off-campus housing),
+                    as well as a filter box and ranking box with different options for filtering/ranking the list.  
+                </li>
+                <li>
+                    <span style="font-weight: bold;"> Dorm: </span> Loads a particular dorm from a set of dorm by retrieving the corresponding document from
+                    a Firebase database and displaying the dorm info, rating, and reviews.
+                </li>
+                <li>
+                    <span style="font-weight: bold;"> OAuth: </span> Authenticates a user to add a review only if they log in through their `@brown.edu`
+                    email address.
+                </li>
+                <li>
+                    <span style="font-weight: bold;"> Profile: </span> Displays profile details once a user authenticates their 
+                    account including name, email, and reviews written.
+                </li>
+                <li>
+                    <span style="font-weight: bold;"> Reviews:  </span> Handles reviews made by a user, including title, content,
+                    and ratings on cleanliness, facilities, and location.
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <div class="section-title"> <h2> Backend Design Choices </h2> <span class="section-line"></span> </div>
+            
+            <h4 style="margin-top:0;"> Technologies </h4>
+            
+            <p>
+                The main technology used for our backend was Node.js (Express.js) to make 
+                our backend API endpoint calls. We chose this language because our frontend was 
+                using TypeScript, so we thought the integration would be more seamless if we used 
+                a JavaScript backend framework.
+            </p>
+            <p> Backend endpoint calls: </p>
+            <ul>
+                <li>Retrieve list of particular dorms based on dormtype (freshman housing, non-freshman housing, off-campus housing</li>
+                <li>Retrieve data of a particular dorm taking the dormtype and id</li>
+                <li>Update the rating statistics of a particular dorm</li>
+                <li>Delete a review</li>
+            </ul>
+            <p> Firebase Firestore collections: </p>
+            <ul>
+                <li>freshman-dorms</li>
+                <li>non-freshman-dorms</li>
+                <li>off-campus-housing</li>
+                <li>users</li>
+            </ul>
+
+            <h4 style="margin-top:0;"> Design Choices </h4>
+            <p>
+                One consideration when designing our storage system was how to store reviews.
+                We decided to add each review to two places -- both the particular dorm it was meant
+                for and the user's collection. Therefore we could quickly access both the reviews array
+                field of a particular dorm as well as reviews written by a certain user, instead 
+                of having to loop through all reviews to search for the ones written by a certain user.
+
+                
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title"> <h2> Final Product </h2> <span class="section-line"></span> </div>
+            <div class="two-col-grid">
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-screen-home.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Landing page (select 'I'm a rising freshman') </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-fresh.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Listed freshmen dorms with filter options </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-and.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Andrews Hall page (top) </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-bottom.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Andrews Hall page (bottom) </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-addreview.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Add review module (only shows if logged in) </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-reviewadded.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Review added on dorm page </p>
+                </div>
+                <div class="grid-comp">
+                    <img class="grid-img" src="assets/dab-profile.png" alt="">
+                    <p style="margin-top: 0; padding-top: 0;"> Review listed on profile </p>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-bottom: 5rem;">
+            <div class="section-title"> <h2> Reflection </h2> <span class="section-line"></span> </div>
+            <p>
+                This was my first experience working on a full-stack application that used an API to
+                integrate a backend database to a frontend display. It was definitely challenging to 
+                build up a complex dorm database and navigate trade-offs such as space-time complexity 
+                for our storage and algorithms.
+            </p>
+            <p>
+                With more time, future steps could include adding a 
+                search bar for dorms (originally in the design), as well as more precise filtering 
+                (eg. filtering for water stations).          
+            </p>
+            <p>
+                View our website and code at our <a href="https://github.com/Dorms-Brown/Dorms-Brown.github.io">GitHub repo</a>!
+            </p>
+            
+        </section>
+
+
+    </div>
+    </body>
+  
+  </html>
