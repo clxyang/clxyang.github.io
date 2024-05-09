@@ -197,7 +197,7 @@ section {
     font-size: 1.4rem;
 
     display: grid;
-    grid-template-columns: 60px 60px 60px;
+    grid-template-columns: 60px 60px;
     align-items: center;
     margin: 0;
     padding: 0;
