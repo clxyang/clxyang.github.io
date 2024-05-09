@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@200;700&family=Open+Sans:wght@300;400;442&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75ad4c9b6c.js" crossorigin="anonymous"></script>
+    <script src="app.js"> </script>
+</head>
+<body>
+
+    <!-- Navbar section =========================================================== -->
+    <nav id="navbar">
+        <a href="/" id="navbar-logo">CY</a>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="#about-me" class="navbar-links">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#featured-projects" class="navbar-links">Projects</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#education" class="navbar-links">Education</a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://drive.google.com/file/d/11JAy3jrJQP9DdvGWRrvlsqXlANpa1Ov2/view?usp=sharing"
+                id="resume-link" class="navbar-links" target="_blank"> Resume</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div id="hamburger-icon">
+        <div id="bar-1"></div>
+        <div id="bar-2"></div>
+        <div id="bar-3"></div>
+        <ul class="mobile-menu">
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#featured-projects">Projects</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1A4kaeJYUIlfXuiwOg8UfJGh-WRoIATpk/view?usp=sharing"
+                id="resume-link" class="navbar-links" target="_blank"> Resume</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- middle section =========================================================== -->
+    <div id="main">
+        <div id="landscape-section">
+            <div id="welcome-message">
+                <h1 id="welcome-title"> Hi! I'm Claire. </h1>
+                <p style="margin-top: 0cm;"> thanks for stopping by. </p>
+            </div>
+            <!-- <img src="wallpaperflare.com_wallpaper.jpg" width="100%"> -->
+        </div>
+
+        <!-- ABOUT ME ===========================================================-->
+        <section id="about-me">
+            <div>
+                <div class="title">
+                    <h2 class="left-title" style="margin-bottom: 5px; margin-top: 0;"> About Me </h2>
+                </div>
+                <div class="body">
+                    <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
+                        Brown University.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
+                        with a specialization in Machine Learning and Design.
+                        I'm also interested in entrepreneurship, education, and visual arts.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I love to create, whether it’s 
+                        exploring an app idea at a Hackathon, 
+                        choreographing combos for my dance team, 
+                        or painting outside on a pretty day.
+                    </p>
+                    <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
+                    </p>
+                </div>
+            </div>
+
+            <div id="portrait-container">
+                <img id="portrait" src="my_portrait.jpg">
+            </div>
+        </section>
+
+
+        <!-- FEATURED PROJECTS ===========================================================-->
+        <!-- sign language detection, dorms @ brown -->
+        <section id="featured-projects">
+            <div class="title">
+                <h2 class="left-title" style="margin-bottom: 5px;"> Featured Projects </h2>
+            </div>
+            <p class="body"> Here are some projects I've completed so far. 
+                I'm excited to add more to the list: </p>
+            <div id="project-items">
+
+                <div id="asl-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://github.com/plumol/csci1470-final-project-ASL" target="_blank"> 
+                            Real-Time ASL Fingerspelling Recognition <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="asl.png">
+                    <a class="blurb-link" onclick="openBlurb('asl')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                        
+                    <div id="asl-blurb" class="p-blurb">
+                        <p> 
+                            Achieved a training and testing accuracy of >99% using a Convolutional Neural Network Model trained on 
+                            over 900 images of American Sign Language alphabet letters. Integrated webcam input for real-time translation
+                            of signed letters.
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="dab-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://dorms-brown.github.io/" target="_blank"> 
+                            Dorms @ Brown Website <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="dab.png">
+                    <a class="blurb-link" onclick="openBlurb('dab')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="dab-blurb" class="p-blurb">
+                        <p> Designed and coded a platform to navigate Brown University's 50+ on-campus housing options. 
+                            Implemented TypeScript algorithms allowing users to search and filter for dorms by preferences such as room size or accommodations. 
+                            Integrated Firebase backend and Google user authentication so students can read/write reliable reviews on their dorms.
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="amia-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://drive.google.com/file/d/1R1T17Hv32SiUA6DiR4GWYSbVcpdpIfQx/view?usp=sharing" target="_blank"> 
+                            Disease Categorization in Text <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="amia-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('amia')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="amia-blurb" class="p-blurb">
+                        <p> Trained a Convolutional Neural Network model for disease categorization based on
+                            Reddit text posts. Achieved 95%+ accuracy in predicting the "silver standard", 
+                            being the name of the subreddit of the post. Saw a 14.33% increase in F1 score compared
+                            to a traditional Naive Bayes classifier.
+                            <br><br>
+                            AMIA High School Scholars Competition Finalist
+
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="csrsef-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://drive.google.com/file/d/1SuQrJwEdewLeMsUNewzXh5iW7ugy7nc0/view?usp=sharing" target="_blank"> 
+                            Auditory Hallucinations on Reddit <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="csrsef-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('csrsef')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="csrsef-blurb" class="p-blurb">
+                        <p> 
+                            Gathered and analyzed 40,645 Reddit posts using Python scripts. Studied patterns in
+                            auditory hallucinations within and across different mental health diagnostic categories
+                            using semantic analysis and topic modeling.
+                            <br><br>
+                            Washington Science and Engineering Fair Third Place Prize
+                        </p>
+                    </div>
+                </div>
+
+                <div id="billcit-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://devpost.com/software/billcitizen-6g3o8f" target="_blank"> 
+                            BillCitizen <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="billcit-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('billcit')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="billcit-blurb" class="p-blurb">
+                        <p> 
+                            Created a mobile app using React Native that decodes the legal jargon in legislative documents, allows individuals 
+                            to track local legislation in an intuitive manner, and makes it quick and easy to take
+                            tangible action. Developed the app using Node.js and TypeScript.
+                            <br><br>
+                            SynHacks Hack the World First Place Prize
+                        </p>
+                    </div>
+                </div>
+
+                <div id="igem-item" class="p-item">
+                    <div class="p-title"> 
+                        <p> <a href="https://2019.igem.org/Team:SoundBio " target="_blank"> SoundBio iGEM Bacto-Basics <img class="link-pic" src="open-window.png" alt=""> </a> </p>
+                    </div>
+
+                    <img class="project-img" src="igem-pic.jpg">
+                    <a class="blurb-link" onclick="openBlurb('igem')"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+
+                    <div id="igem-blurb" class="p-blurb">
+                        <p> 
+                            Co-led the SoundBio iGEM team in executing Bacto-Basics, a project that aimed to functionalize
+                            bacterial cellulose through the attachment of chromoproteins to the cellular membrane. Created a
+                            platform for precise, light-based control of this functionalization for
+                            applications including burn wound treatment and tissue scaffolding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- OTHER PROJECTS ===========================================================-->
+        <section id="other-projects">
+            <div class="title">
+                <h2 class="left-title" style="margin-bottom: 5x; margin-top: 2rem;"> Additional Work (hover!) </h2>
+            </div>
+            <div id="work-items">
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Travel Planner </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Implemented Dijkstra's algorithm to compute the most optimal
+                                route between locations on a map, prioritizing
+                                either price, time, or directness. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-tp.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Search </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Created a search engine able to index XML documents
+                                and process search queries using Google's PageRank algorithm.
+                                The search engine calculates and outputs the top 10 most
+                                relevant documents for any free text query. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-search.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Updater </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Designed a "cursor" data structure that represents an immutable tree of arbitrary
+                                size, allowing for much more efficient tree traversal and modification. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-updater.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Seamcarve </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Used dynamic programming and memoization to resize images by removing the least
+                                important vertical "seams", determined by the difference in color
+                                between each pixel and its neighbors. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-sc.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Decision Tree </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Wrote a program able to make accurate classifications of new items based on data
+                                read in from a dataset. Used a tree-shaped data structure, a "decision tree",
+                                to model attributes and outcomes. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-dt.jpg" alt="">
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> My Portfolio Website </p>
+                        </div>
+                        <div class="w-blurb">
+                            <p> Designed and coded my own personal website (this website!) using
+                                solely HTML, CSS, JavaScript, and Procreate. :) </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-portrait.png" alt="">
+                </div>
+            </div>
+
+            <div id="art-portfolio">
+                <div id="art-heading">
+                    <p class="body" onclick="openMediaScroller()"> My Mini Art Portfolio (scroll through) </p>
+                    <a id="art-link" onclick="openMediaScroller()"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                </div>
+
+                <div id="media-scroller" class="snaps-inline">
+                    <div class="art-piece">
+                        <img src="art/best-stilllife.JPG" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/watermelon-art.JPG" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/statue-art.jpg" alt="">
+                        <p> Graphite, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/ballet-art.jpeg" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/dolly-parton-art.jpg" alt="">
+                        <p> Charcoal, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/eye-ocean-art.jpg" alt="">
+                        <p> Colored Pencil and Pastel, 9" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/foot-art.JPG" alt="">
+                        <p> Graphite, 14" x 17" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/winter-art.jpg" alt="">
+                        <p> Acrylic, 12" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/crying-art.JPG" alt="">
+                        <p> Colored Pencil and Pastel, 9" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/mountain-case.JPG" alt="">
+                        <p> Acrylic on Calculator Case </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EDUCATION ===========================================================-->
+        <section id="education">
+            <div class="title">
+                <h2 class="middle-title" style="margin-bottom: 5x; text-align: center;"> Education </h2>
+            </div>
+            
+            <div class="school-grid">
+                <div class="school-section">
+                    <div class="school-name-grid">
+                        <img src="brown-logo.png" alt="">
+                        <div class="school-name">
+                            <h2> Brown University </h2>
+                        </div>
+                    </div>
+            
+                    <div id="college-info">
+                        <h3> B.S. - Computer Science </h3>
+                        <p> Sep 2021 - Sep 2025 </p>
+                        <p class="school-text"> > Specialization in AI/ML and Design 
+                            <br> > GPA - 4.0
+                        </p>
+                        <p class="school-text"> Clubs: Fusion Dance Company, Impulse Dance Company,
+                            Women in Computer Science, Fashion at Brown, Cooking Club </p>
+                    </div>
+                </div>
+
+                <!-- <div class="school-section">
+                    <div class="school-name-grid">
+                        <img src="stem-logo-1.png" alt="">
+                        <div class="school-name">
+                            <h2> Tesla STEM High School </h2>
+                        </div>
+                    </div>
+
+                    <div id="highschool-info">
+                        <h3> Graduated June 2021 </h3>
+                        <p class="school-text"> > High School Diploma
+                            <br> > GPA - 4.0
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+ <!-- CONTACT-SIDE ===========================================================-->
+
+        <div id="contact-sidebar"> 
+            <ul id="socials-list"> 
+                <li>
+                    <a href="https://www.linkedin.com/in/clxyang" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.github.com/clxyang" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="email-sidebar"> 
+            <div id="email-link-container">
+                <a href="mailto:claire_yang@brown.edu" id="email-link"> claire_yang@brown.edu </a>
+            </div>
+        </div>
+
+ <!-- CONTACT-BOTTOM ===========================================================-->
+
+        <!-- <section id="contact">
+            <div class="title">
+                <h2 class="middle-title" style="margin-top: 0rem; text-align: center;"> 
+                    Contact Me </h2>
+            </div>
+            <p class="body" style="text-align: center;">  </p>
+
+            <div id="contact-info-button">
+                <img src="arrow-icon-1.png" alt="">
+                <h3> Say hello! </h3>
+            </div>
+
+        </section> -->
+
+    </div>
+
+<!-- FOOTER ===========================================================-->
+
+    <footer>
+           <div>
+               <a id="footer-content" href="https://github.com/clxyang/clxyang.github.io" target="_blank">
+                    Claire Yang | clxyang | claire_yang@brown.edu
+                    <br>
+                    made with ♡ 2022
+               </a>
+           </div> 
+    </footer>
+
+</body>
+</html>

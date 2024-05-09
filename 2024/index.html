@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Inter:wght@300&family=Jomolhari&family=Mulish:wght@200;700&family=Open+Sans:wght@300;400;442&family=Roboto+Mono:wght@300;400;500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75ad4c9b6c.js" crossorigin="anonymous"></script>
+    <script src="app.js"> </script>
+</head>
+<body>
+
+    <!-- Navbar section =========================================================== -->
+    <nav id="navbar">
+        <a href="/portfolio/" id="navbar-logo">CY</a>
+        <div class="navbar-toggle" class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="#work" class="navbar-links">work</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#about-me" class="navbar-links">about</a>
+            </li>
+
+            <ul id="socials-list"> 
+                <li>
+                    <a href="https://www.linkedin.com/in/clxyang" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="https://www.instagram.com/claire._y/" target="_blank"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="https://www.github.com/clxyang" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <!-- <div id="hamburger-icon">
+        <div id="bar-1"></div>
+        <div id="bar-2"></div>
+        <div id="bar-3"></div>
+        <ul class="mobile-menu">
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#featured-projects">Projects</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1A4kaeJYUIlfXuiwOg8UfJGh-WRoIATpk/view?usp=sharing"
+                id="resume-link" class="navbar-links" target="_blank"> Resume</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- middle section =========================================================== -->
+    <div class="main">
+        <div class="landscape-section">
+            <div class="welcome-message">
+                <h1 class="welcome-title"> Hi! I'm Claire. </h1>
+                <p class="welcome-text"> I am currently <br> <span id="word"> </span></p>
+            </div>
+            <img class="portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+        </div>
+        <div class="mobile-landscape-section">
+            <div class="mobile-welcome-message">
+                <h1 class="mobile-welcome-title"> Hi! I'm Claire. </h1>
+                <img class="mobile-portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+            </div>
+            <p class="mobile-welcome-text"> I am currently <br> <span id="mobile-word"> </span></p>
+        </div>
+
+        <!-- ABOUT ME ===========================================================-->
+        <!-- <section class="about-me">
+            <div>
+                <div class="title">
+                    <h2 class="left-title" style="margin-bottom: 5px; margin-top: 0;"> About Me </h2>
+                </div>
+                <div class="body">
+                    <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
+                        Brown University.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
+                        with a specialization in Machine Learning and Design.
+                        I'm also interested in entrepreneurship, education, and visual arts.
+                    </p>
+                    <p style="margin-bottom: 5px;"> I love to create, whether it’s 
+                        exploring an app idea at a Hackathon, 
+                        choreographing combos for my dance team, 
+                        or painting outside on a pretty day.
+                    </p>
+                    <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
+                    </p>
+                </div>
+            </div>
+
+            <div id="portrait-container">
+                <img id="portrait" src="my_portrait.jpg">
+            </div>
+        </section> -->
+
+
+        <!-- FEATURED PROJECTS ===========================================================-->
+        <!-- sign language detection, dorms @ brown -->
+        <section id="work">
+            <div class="title">
+                <div class="section-title"> <h2> case studies </h2> <span class="section-line"></span> </div>
+            </div>
+            <div id="project-items">
+
+                
+                <div id="partiful-item" class="p-item">
+                    <a href="/work/partiful" target="_blank">
+                        <img class="project-img" src="imgs/partifulpage.webp">
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> Partiful Event Page </p>
+                        <p class="project-brief"> A design exploration into Partiful's Event Customization page. </p>
+                    </div>
+                </div>
+
+                <div id="bagelgourmet-item" class="p-item">
+                    <a href="/work/bagel-gourmet" target="_blank">
+                        <img class="project-img" src="imgs/bagel_gourmet.png">
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> Bagel Gourmet Redesign </p>
+                        <p class="project-brief"> A development project redesigning Bagel Gourmet's homepage. </p>
+                    </div>
+                </div>
+
+                <div id="dab-item" class="p-item">
+                    <a href="/work/dab" target="_blank">
+                        <img class="project-img" src="imgs/dab.png">
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> Dorms at Brown </p>
+                        <p class="project-brief"> A React platform to navigate Brown University's 50+ on-campus housing options. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+            <!-- OTHER PROJECTS ===========================================================-->
+        <section id="other-projects">
+           
+            <div id="art-portfolio">
+                <div id="art-heading">
+                    <p class="body" onclick="openMediaScroller()"> My Mini Art Portfolio (scroll through) </p>
+                    <a id="art-link" onclick="openMediaScroller()"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                </div>
+
+                <div id="media-scroller" class="reveal" class="snaps-inline">
+                    <div class="art-piece">
+                        <img src="art/best-stilllife.JPG" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/watermelon-art.JPG" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/statue-art.jpg" alt="">
+                        <p> Graphite, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/ballet-art.jpeg" alt="">
+                        <p> Oil Paint, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/dolly-parton-art.jpg" alt="">
+                        <p> Charcoal, 18" x 24" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/eye-ocean-art.jpg" alt="">
+                        <p> Colored Pencil and Pastel, 9" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/foot-art.JPG" alt="">
+                        <p> Graphite, 14" x 17" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/winter-art.jpg" alt="">
+                        <p> Acrylic, 12" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/crying-art.JPG" alt="">
+                        <p> Colored Pencil and Pastel, 9" x 12" </p>
+                    </div>
+                    <div class="art-piece">
+                        <img src="art/mountain-case.JPG" alt="">
+                        <p> Acrylic on Calculator Case </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT ME ===========================================================-->
+        <section id="about-me">
+            <div>
+                <div class="section-title"> <h2> about me </h2> <span class="section-line"></span> </div>
+                <div class="about-container">
+                    <div class="body">
+                        <p style="margin-bottom: 5px;"> Hello! My name is Claire Yang and I'm a student at
+                            Brown University.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
+                            with a specialization in Software Engineering and Design.
+                            I'm also interested in entrepreneurship, education, and visual arts.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I hope to explore how technology can be used to unite
+                            and support communities through innovative, accessible products.
+                            I want to learn more about how human-centered design plays a role
+                            in effectively building these products, as well as how artificial intelligence can
+                            responsibly be used as a tool for inclusion.
+                        </p>
+                        <p style="margin-bottom: 5px;"> I love to create, whether it’s 
+                            exploring an app idea at a Hackathon, 
+                            choreographing combos for my dance team, 
+                            or painting outside on a pretty day.
+                        </p>
+                        <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
+                        </p>
+                    </div>
+                    <div id="portrait-container">
+                        <img id="portrait" src="my_portrait.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+       
+
+ <!-- CONTACT-SIDE ===========================================================-->
+
+        <!-- <div id="contact-sidebar"> 
+            <ul id="socials-list"> 
+                <li>
+                    <a href="https://www.linkedin.com/in/clxyang" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/claire._y/" target="_blank"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/clxyang" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+
+        <div id="email-sidebar"> 
+            <div id="email-link-container">
+                <a href="mailto:claire_yang@brown.edu" id="email-link"> claire_yang@brown.edu </a>
+            </div>
+        </div>
+
+ <!-- CONTACT-BOTTOM ===========================================================-->
+
+        <!-- <section id="contact">
+            <div class="title">
+                <h2 class="middle-title" style="margin-top: 0rem; text-align: center;"> 
+                    Contact Me </h2>
+            </div>
+            <p class="body" style="text-align: center;">  </p>
+
+            <div id="contact-info-button">
+                <img src="arrow-icon-1.png" alt="">
+                <h3> Say hello! </h3>
+            </div>
+
+        </section> -->
+
+    </div>
+
+<!-- FOOTER ===========================================================-->
+
+    <footer>
+           <div>
+               <a id="footer-content" href="https://github.com/clxyang/clxyang.github.io" target="_blank">
+                    Claire Yang | clxyang | claire_yang@brown.edu
+                    <br>
+                    made with ♡ 2024
+               </a>
+           </div> 
+    </footer>
+
+</body>
+</html>
