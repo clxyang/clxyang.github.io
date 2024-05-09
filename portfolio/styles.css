@@ -232,7 +232,7 @@ section {
 }
 
 .welcome-message {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--dark-text);
     text-align: center;
     width: 30vw;
@@ -336,7 +336,7 @@ section {
 }
 
 .mobile-portrait {
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
@@ -358,10 +358,10 @@ section {
 }
 
 .mobile-welcome-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
     .landscape-section {
         display: none;
     }

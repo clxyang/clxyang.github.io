@@ -103,7 +103,7 @@
                 on various aspects of dorm life, such as cleanliness, facilities, and location.
                 By aggregating this data, our website also offers an overall "star" rating for each dorm, 
                 facilitating informed decision-making during the housing lottery process. With this resource, we 
-                seek to alleviate the stress of dorm selection by providing access to valuable dorm-related 
+                sought to alleviate the stress of dorm selection by providing access to valuable dorm-related 
                 information for all students participating in the housing lottery. </p>
         </section>
     
@@ -120,8 +120,8 @@
             </p>
 
             <div class="two-col-grid">
-                <img class="grid-img" src="assets/dab-home.png" alt="">
-                <img class="grid-img" src="assets/dab-search.png" alt="">
+                <img class="grid-img" src="assets/dab-home.png" alt="Figma design for Dorms at Brown home page">
+                <img class="grid-img" src="assets/dab-search.png" alt="Figma design for Dorms at Brown dorms listing page">
             </div>
 
             <p>On the frontend, we used React.js with TypeScript and Tailwind CSS for styling.
@@ -182,7 +182,21 @@
                 <li>users</li>
             </ul>
 
-            <h4 style="margin-top:0;"> Design Choices </h4>
+            <h4 style="margin-top:0;"> Implementing Filter/Sort Algorithms </h4>
+            <p>
+                I worked on implementing the filter and sort components to 
+                navigate a list of dorms. Filtering included room type (singles, doubles,
+                triples, suites) and amenities (elevators, semi-private bathrooms, 
+                 non-program housing). One difficulty I faced was the boolean logic 
+                 behind different sorting options. I found that for room type, 
+                 it made sense to include all dorms that included any of the selected 
+                 room types (treating it as an "or"). However, for amenities, it made sense to only include dorms 
+                 that met ALL selected amenities (treating it as an "and"). I tried to 
+                 reflect this difference in the design as well by separating the 
+                 filter options within the box.
+            </p>
+
+            <h4 style="margin-top:0;"> Space-Time Complexity Choices </h4>
             <p>
                 One consideration when designing our storage system was how to store reviews.
                 We decided to add each review to two places -- both the particular dorm it was meant
@@ -198,31 +212,31 @@
             <div class="section-title"> <h2> Final Product </h2> <span class="section-line"></span> </div>
             <div class="two-col-grid">
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-screen-home.png" alt="">
-                    <p style="margin-top: 0; padding-top: 0;"> Landing page (select 'I'm a rising freshman') </p>
+                    <img class="grid-img" src="assets/dab-screen-home.png" alt="D@B home page screen">
+                    <p style="margin-top: 0; padding-top: 0;"> Landing page </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-fresh.png" alt="">
+                    <img class="grid-img" src="assets/dab-fresh.png" alt="D@B freshman dorms list screen">
                     <p style="margin-top: 0; padding-top: 0;"> Listed freshmen dorms with filter options </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-and.png" alt="">
+                    <img class="grid-img" src="assets/dab-and.png" alt="D@B Andrews Hall page (top)">
                     <p style="margin-top: 0; padding-top: 0;"> Andrews Hall page (top) </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-bottom.png" alt="">
+                    <img class="grid-img" src="assets/dab-bottom.png" alt="D@B Andrews Hall page (bottom)">
                     <p style="margin-top: 0; padding-top: 0;"> Andrews Hall page (bottom) </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-addreview.png" alt="">
-                    <p style="margin-top: 0; padding-top: 0;"> Add review module (only shows if logged in) </p>
+                    <img class="grid-img" src="assets/dab-addreview.png" alt="D@B review module popup">
+                    <p style="margin-top: 0; padding-top: 0;"> Add review module (button only shows if logged in) </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-reviewadded.png" alt="">
+                    <img class="grid-img" src="assets/dab-reviewadded.png" alt="D@B reviews section">
                     <p style="margin-top: 0; padding-top: 0;"> Review added on dorm page </p>
                 </div>
                 <div class="grid-comp">
-                    <img class="grid-img" src="assets/dab-profile.png" alt="">
+                    <img class="grid-img" src="assets/dab-profile.png" alt="D@B profile section">
                     <p style="margin-top: 0; padding-top: 0;"> Review listed on profile </p>
                 </div>
             </div>

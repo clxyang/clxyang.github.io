@@ -341,6 +341,13 @@ header {
     gap: 1.5rem;
 }
 
+@media screen and (max-width: 840px) {
+    .two-col-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
 .grid-comp {
     text-align: center;
 }
