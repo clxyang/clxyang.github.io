@@ -218,7 +218,7 @@ section {
 /* LANDING ====================================================================== */
 
 .landscape-section {
-    padding-top: 10rem;
+    padding-top: 8rem;
     display: flex;
     row-gap: 1rem;
     width: 68%;
@@ -361,7 +361,7 @@ section {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 843px) {
     .landscape-section {
         display: none;
     }
