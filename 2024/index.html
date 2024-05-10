@@ -28,6 +28,10 @@
                 <a href="#work" class="navbar-links">work</a>
             </li>
             <li class="navbar-item">
+                <a href="/playground" class="navbar-links">play</a>
+            </li>
+
+            <li class="navbar-item">
                 <a href="#about-me" class="navbar-links">about</a>
             </li>
 
@@ -76,17 +80,20 @@
         <div class="landscape-section">
             <div class="welcome-message">
                 <h1 class="welcome-title"> Hi! I'm Claire. </h1>
-                <p class="welcome-text"> I am currently <br> <span id="word"> </span></p>
+                <p class="welcome-text"> I'm an aspiring software engineer, currently <br> <span id="word"> </span></p>
             </div>
-            <img class="portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+            <img class="portrait" src='non-wink.png' alt="self portrait drawing with peace sign" onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
         </div>
         <div class="mobile-landscape-section">
             <div class="mobile-welcome-message">
                 <h1 class="mobile-welcome-title"> Hi! I'm Claire. </h1>
-                <img class="mobile-portrait" src='non-wink.png' onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
+                <img class="mobile-portrait" src='non-wink.png' alt="self portrait drawing with peace sign and wink" onmouseover="this.src='wink.png';" onmouseout="this.src='non-wink.png';" />
             </div>
-            <p class="mobile-welcome-text"> I am currently <br> <span id="mobile-word"> </span></p>
+            <p class="mobile-welcome-text"> I am an aspiring software engineer, currently <br> <span id="mobile-word"> </span></p>
         </div>
+        <!-- <div>
+            <a class="blurb-link" href="#work"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+        </div> -->
 
         <!-- ABOUT ME ===========================================================-->
         <!-- <section class="about-me">
@@ -122,14 +129,50 @@
         <!-- sign language detection, dorms @ brown -->
         <section id="work">
             <div class="title">
-                <div class="section-title"> <h2> case studies </h2> <span class="section-line"></span> </div>
+                <div class="section-title"> <h2> projects </h2> <span class="section-line"></span> </div>
             </div>
+            <p>Some projects I've worked on for school, internships, and fun  :)</p>
             <div id="project-items">
 
+                <div id="spot-item" class="p-item">
+                    <a href="https://linkedin.com/in/clxyang" class="img-container" target="_blank">
+                        <img class="project-img" src="imgs/spotify.png" alt="Spotify image">
+                        <p class="p-link-label"> Ask me for more details! </p>
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> Spotify Platform In-App Messaging </p>
+                        <p class="project-brief"> A full-stack project building a gRPC service to publish in-app messages 
+                            to users through a React webview.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="asl-item" class="p-item">
+                    <a href="https://github.com/plumol/csci1470-final-project-ASL" class="img-container" target="_blank">
+                        <img class="project-img" src="imgs/asl.png" alt="ASL projcet poster">
+                        <p class="p-link-label"> See GitHub repo </p>
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> ASL Fingerspelling Recognition </p>
+                        <p class="project-brief"> A machine learning project training a CNN model on over 900 images of ASL alphabet letters. </p>
+                    </div>
+                </div>
+
+                <div id="dab-item" class="p-item">
+                    <a href="https://github.com/Dorms-Brown/Dorms-Brown.github.io" class="img-container" target="_blank">
+                        <img class="project-img" src="imgs/dab.png" alt="Dorms at Brown home page">
+                        <p class="p-link-label"> See GitHub repo </p>
+                    </a>
+                    <div class="title-container"> 
+                        <p class="company-name"> Dorms at Brown </p>
+                        <p class="project-brief"> A React platform to navigate Brown University's 50+ on-campus housing options. </p>
+                    </div>
+                </div>
                 
                 <div id="partiful-item" class="p-item">
-                    <a href="/work/partiful" target="_blank">
-                        <img class="project-img" src="imgs/partifulpage.webp">
+                    <a href="/2024/partiful/" class="img-container" target="_blank">
+                        <img class="project-img" src="imgs/partifulpage.webp" alt="Partiful's event customization page">
+                        <p class="p-link-label"> See case study </p>
                     </a>
                     <div class="title-container"> 
                         <p class="company-name"> Partiful Event Page </p>
@@ -137,84 +180,124 @@
                     </div>
                 </div>
 
-                <div id="bagelgourmet-item" class="p-item">
-                    <a href="/work/bagel-gourmet" target="_blank">
-                        <img class="project-img" src="imgs/bagel_gourmet.png">
-                    </a>
-                    <div class="title-container"> 
-                        <p class="company-name"> Bagel Gourmet Redesign </p>
-                        <p class="project-brief"> A development project redesigning Bagel Gourmet's homepage. </p>
+            </div>
+            <div class="title">
+                <div class="section-title"> <h2> other work </h2> <span class="section-line"></span> </div>
+            </div>
+
+            <div id="work-items">
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Optimized Matching Algorithm </p>
+                        </div>
+                        <div>
+                            <p  class="w-blurb"> Optimized an existing manual volunteer-beneficiary matching system 
+                                for the Noemi Frida Kraut Foundation by building an algorithm to match users on profile 
+                                similarities and automating the storage of user info with Firebase. </p>
+                        </div>
                     </div>
+                    <div class="w-label"> <p>Develop for Good 2023</p> </div>
                 </div>
 
-                <div id="dab-item" class="p-item">
-                    <a href="/work/dab" target="_blank">
-                        <img class="project-img" src="imgs/dab.png">
-                    </a>
-                    <div class="title-container"> 
-                        <p class="company-name"> Dorms at Brown </p>
-                        <p class="project-brief"> A React platform to navigate Brown University's 50+ on-campus housing options. </p>
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Multi-Threaded KV Storage </p>
+                        </div>
+                        <div>
+                            <p  class="w-blurb"> Implemented a concurrent key-value storage system in 
+                                C++ using various synchronization techniques to ensure thread safety, such 
+                                as mutexes, buckets, and RWLocks.  </p>
+                        </div>
                     </div>
+                    <div class="w-label"> <p>Brown CS0300</p> </div>
                 </div>
 
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Travel Planner </p>
+                        </div>
+                        <div>
+                            <p class="w-blurb"> Implemented Dijkstra's algorithm to compute the most optimal
+                                route between locations on a map, prioritizing
+                                either price, time, or directness. </p>
+                        </div>
+                    </div>
+                    <div class="w-label"> <p>Brown CS0190</p> </div>
+
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> PageRank Search Engine </p>
+                        </div>
+                        <div>
+                            <p class="w-blurb"> Created a search engine able to index XML documents
+                                and process search queries using Google's PageRank algorithm.
+                                The search engine calculates and outputs the top 10 most
+                                relevant documents for any free text query. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-search.jpg" alt="">
+                    <div class="w-label"> <p>Brown CS0200</p> </div>
+
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Smart Image Resizing </p>
+                        </div>
+                        <div>
+                            <p class="w-blurb"> Used dynamic programming and memoization to resize images by removing the least
+                                important vertical "seams", determined by the difference in color
+                                between each pixel and its neighbors. </p>
+                        </div>
+                    </div>
+                    <img class="w-pic" src="icon-sc.jpg" alt="">
+                    <div class="w-label"> <p>Brown CS0190</p> </div>
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> Decision Tree </p>
+                        </div>
+                        <div>
+                            <p class="w-blurb"> Wrote a program able to make accurate classifications of new items based on data
+                                read in from a dataset. Used a tree-shaped data structure, a "decision tree",
+                                to model attributes and outcomes. </p>
+                        </div>
+                    </div>
+                    <div class="w-label"> <p>Brown CS0200</p> </div>
+                </div>
+
+                <div class="w-item">
+                    <div class="w-text">
+                        <div class="w-title"> 
+                            <p> My Portfolio Website </p>
+                        </div>
+                        <div>
+                            <p class="w-blurb"> Designed and coded my own personal website (this website!) using
+                                plain HTML/CSS, JavaScript, and Procreate. :) </p>
+                        </div>
+                    </div>
+                    <div class="w-label"> <p>Personal Project</p> </div>
+                </div>
             </div>
         </section>
         
             <!-- OTHER PROJECTS ===========================================================-->
-        <section id="other-projects">
-           
-            <div id="art-portfolio">
-                <div id="art-heading">
-                    <p class="body" onclick="openMediaScroller()"> My Mini Art Portfolio (scroll through) </p>
-                    <a id="art-link" onclick="openMediaScroller()"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
-                </div>
-
-                <div id="media-scroller" class="reveal" class="snaps-inline">
-                    <div class="art-piece">
-                        <img src="art/best-stilllife.JPG" alt="">
-                        <p> Oil Paint, 18" x 24" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/watermelon-art.JPG" alt="">
-                        <p> Oil Paint, 18" x 24" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/statue-art.jpg" alt="">
-                        <p> Graphite, 18" x 24" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/ballet-art.jpeg" alt="">
-                        <p> Oil Paint, 18" x 24" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/dolly-parton-art.jpg" alt="">
-                        <p> Charcoal, 18" x 24" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/eye-ocean-art.jpg" alt="">
-                        <p> Colored Pencil and Pastel, 9" x 12" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/foot-art.JPG" alt="">
-                        <p> Graphite, 14" x 17" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/winter-art.jpg" alt="">
-                        <p> Acrylic, 12" x 12" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/crying-art.JPG" alt="">
-                        <p> Colored Pencil and Pastel, 9" x 12" </p>
-                    </div>
-                    <div class="art-piece">
-                        <img src="art/mountain-case.JPG" alt="">
-                        <p> Acrylic on Calculator Case </p>
-                    </div>
-                </div>
-
+        <!-- <section id="other-projects">
+            <div class="title">
+                <div class="section-title"> <h2> more projects </h2>  </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- ABOUT ME ===========================================================-->
         <section id="about-me">
@@ -227,24 +310,24 @@
                         </p>
                         <p style="margin-bottom: 5px;"> I'm currently pursuing a B.S. in Computer Science
                             with a specialization in Software Engineering and Design.
-                            I'm also interested in entrepreneurship, education, and visual arts.
+                            I'm also interested in entrepreneurship, education, and <a href="/playground">visual arts</a>.
                         </p>
                         <p style="margin-bottom: 5px;"> I hope to explore how technology can be used to unite
-                            and support communities through innovative, accessible products.
-                            I want to learn more about how human-centered design plays a role
-                            in effectively building these products, as well as how artificial intelligence can
-                            responsibly be used as a tool for inclusion.
+                            and support communities through innovative, accessible products, as well as how 
+                            human-centered design plays a role
+                            in effectively building these products.
                         </p>
                         <p style="margin-bottom: 5px;"> I love to create, whether it’s 
                             exploring an app idea at a Hackathon, 
                             choreographing combos for my dance team, 
                             or painting outside on a pretty day.
                         </p>
-                        <p> I also love meeting new people. Let's <a class="body-link" href="mailto:claire_yang@brown.edu"> get in touch</a>!
+                        <p> I also love meeting new people. Please contact me with 
+                            cool ideas, feedback, or fun word games <a class="body-link" href="mailto:claire_yang@brown.edu"> claire_yang@brown.edu</a>.
                         </p>
                     </div>
                     <div id="portrait-container">
-                        <img id="portrait" src="my_portrait.jpg">
+                        <img id="portrait" src="my_portrait.jpg" alt="Portrait of me">
                     </div>
                 </div>
             </div>

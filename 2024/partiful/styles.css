@@ -1,0 +1,365 @@
+:root {
+    --dark-text: rgb(28, 6, 47);
+    --nav-purple: #6a3e85;
+}
+
+body {
+    background-color: #f6f5f4;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-text);
+    font-family: "Space Grotesk", sans-serif;
+    /* font-family: 'Mulish', sans-serif; */
+    font-weight: normal;
+    font-size: medium;
+}
+
+p {
+    line-height: 150%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+ul {
+    margin-top: 10px;
+    padding-top: 0;
+    line-height: 1.3rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.section {
+    width: 75%;
+}
+
+/* NAVBAR ====================================================================== */
+
+#navbar {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+
+    background-color: #f6f5f4;
+    transition: all 0.3s linear;
+}
+
+#navbar-logo {
+    background-color: #7f49a0;
+    background-image: linear-gradient(to top, #b908ff 0%, #e1c3fc 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 70px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    padding-right: 53px;
+    justify-content: space-around;
+}
+
+.navbar-links {
+    color: #6a3e85;
+    text-decoration: none;
+    padding: 0 1.3rem;
+    transition: all 0.2s ease;
+}
+
+#resume-link {
+    color:rgb(183, 95, 196);
+}
+
+.navbar-links:hover {
+    color: rgb(198, 164, 208);
+}
+
+#resume-link:hover {
+    color: #ea9ce9;
+    transition: all 0.2s ease;
+}
+
+#navbar.hidden {
+    top: -80px;
+}
+
+.hamburger-icon {
+    right: 0;
+    margin-top: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open #bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open #bar2 {
+    opacity: 0;
+}
+
+.open #bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-logo {
+        display: none;
+    }
+  }
+
+section {
+    /* padding-top: 2.5rem; */
+    /* padding-bottom: 2.5rem; */
+    width: 80%;
+    padding-top: 1rem;
+}
+
+/* CONTACT SIDEBAR ====================================================================== */
+
+#contact-sidebar {
+    width: 40px;
+    position: fixed;
+    bottom: 3rem;
+    /* left: 30px; */
+    right: auto;
+}
+
+#socials-list {
+    font-size: 1.4rem;
+
+    display: grid;
+    grid-template-columns: 60px 60px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* filter: drop-shadow(1.4px 1.2px 1.2px #201744); */
+}
+
+.fa-brands {
+    color: #6a3e85;
+    padding: 0.9rem;
+    transition: all 0.2s linear;
+}
+
+.fa-brands:hover {
+    color: rgb(198, 164, 208);
+    font-size: 1.6rem;
+}
+
+.fa-linkedin-in {
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.fa-linkedin-in:hover {
+    font-size: 1.6rem;
+}
+
+/* GENERAL */
+
+h4 {
+    font-size: large;
+    padding-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+header {
+    padding-top: 5rem;
+    text-align: left;
+    width: 75%;
+}
+
+.header-top {
+    font-weight: 100;
+    font-size: medium;
+}
+
+.section-title {
+    padding-top: 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.section-line {
+    outline-style: groove;
+    outline-width: 0.9px;
+    outline-color:#625c98;
+    height: 0px;
+    align-self: center;
+}
+
+/* PART 1: BACKGROUND ================================================== */
+
+#problem {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    justify-content: center;
+    text-align: center;
+    paddin-top: 1rem;
+}
+
+.image-wrapper {
+    display: inline-block;
+}
+
+#original-site-img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .col-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* PART 2: VISUAL REDESIGN ================================================== */
+
+.laundry-list-container {
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 2rem;
+}
+
+.cutout-section {
+    align-content: center;
+}
+
+.sketches-img {
+    width: 100%;
+}
+
+.sketches-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.wireframe-section {
+    width: 100%;
+    padding: 1rem;
+    /* color: white; */
+    /* background-color: #1e1e1e; */
+    display: flex;
+    gap: 2rem;
+    outline-style: groove;
+    overflow: scroll;
+    outline-color: --nav-purple;
+    border-radius: 0.5rem;
+}
+
+.wireframe-img {
+    height: 300px;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#style-guide-img {
+    width: 70%;
+    background-color: #1e1e1e;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+    .sketches-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.video-embed {
+    margin-top: 2rem;
+}
