@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Inter:wght@300&family=Jomolhari&family=Mulish:wght@200;700&family=Open+Sans:wght@300;400;442&family=Roboto+Mono:wght@300;400;500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75ad4c9b6c.js" crossorigin="anonymous"></script>
+    <script src="app.js"> </script>
+</head>
+
+<body>
+
+    <!-- Navbar section =========================================================== -->
+    <nav id="navbar">
+        <a href="/sts1700f" id="navbar-logo">STS1700F</a>
+        <div class="navbar-toggle" class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="/sts1700f/artist-statement/" class="navbar-links">artist statement</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/sts1700f/bibliography/" class="navbar-links">bibliography</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="main">
+        <header>
+            <p class="welcome-text">an interactive look into how spiritualism drove scientific inquiry 
+                 in the late 19th and early 20th century </p>
+            <!-- <p class="small"> please expand your screen for the best experience </p> -->
+        </header>
+
+        <div class="main-background">
+            <div class="icon-col">
+                <div class="icon-div" onclick="openBlurb('candle')">
+                    <img class="icon" src="icons/sts-candle.png" alt="">
+                    <p> candle </p>
+                </div>
+                <div class="icon-div" onclick="openBlurb('flowers')">
+                    <img class="icon" src="icons/sts-flower.png" alt="">
+                    <p> flowers </p>
+                </div>
+                <div class="icon-div" onclick="openBlurb('book')">
+                    <img class="icon" src="icons/sts-book.png" alt="">
+                    <p> notebook </p>
+                </div>
+                <div class="icon-div" onclick="openBlurb('chair')">
+                    <img class="icon" src="icons/sts-chair.png" alt="">
+                    <p> furniture </p>
+                </div>
+            </div>
+            <div class="reveal-items">
+                <div id="candle-item">
+                    <p>hello</p>
+                    <img width="24%" src="icons/shad-candle.png" alt="">
+                </div>
+                <div id="flowers-item">
+                    <p>hello</p>
+                    <img width="24%" src="icons/shad-flowr.png" alt="">
+                </div>
+                <div id="book-item">
+                    <p>hello</p>
+                    <img width="24%" src="icons/shad-book.png" alt="">
+                </div>
+                <div id="chair-item">
+                    <p>hello</p>
+                    <img width="30%" src="icons/shad-chair.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="screensize-message">
+            <h1>please increase your screen size for the best experience!</h1>
+        </div>
+    </div>
+
+    </body>
+  
+  </html>

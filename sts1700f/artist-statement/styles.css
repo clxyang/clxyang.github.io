@@ -1,0 +1,155 @@
+:root {
+    --background: #171718;
+    --light-grey: #6f787e
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    /* font-family: 'Mulish', sans-serif; */
+    font-weight: normal;
+    font-size: medium;
+}
+
+p {
+    line-height: 150%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+ol {
+    margin-top: 10px;
+    padding-top: 0;
+    line-height: 1.3rem;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* NAVBAR ====================================================================== */
+
+#navbar {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+
+    background-color: --background;
+    transition: all 0.3s linear;
+}
+
+#navbar-logo {
+    background-color: var(--light-grey);
+    background-image: linear-gradient(to top, #d9e2e6, #50a1ec 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 70px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    text-align: center;
+    margin-left: auto;
+    padding-right: 53px;
+    justify-content: space-around;
+}
+
+.navbar-links {
+    color: white;
+    text-decoration: none;
+    padding: 0 1.3rem;
+    transition: all 0.2s ease;
+}
+
+.navbar-links:hover {
+    color: #a2a8ac;
+}
+
+#navbar.hidden {
+    top: -80px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-logo {
+        display: none;
+    }
+  }
+
+section {
+    /* padding-top: 2.5rem; */
+    /* padding-bottom: 2.5rem; */
+    width: 80%;
+    padding-top: 2rem;
+}
+
+/* STS SPECIFIC =================== */
+
+/* GENERAL */
+
+h4 {
+    font-size: large;
+    padding-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+header {
+    padding-top: 10rem;
+    text-align: left;
+    width: 75%;
+}
+
+.header-top {
+    font-weight: 100;
+    font-size: medium;
+}
+
+.section-title {
+    padding-top: 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.section-line {
+    outline-style: groove;
+    outline-width: 0.9px;
+    outline-color:#625c98;
+    height: 0px;
+    align-self: center;
+}
+
