@@ -39,11 +39,16 @@
         <header>
             <p class="welcome-text">an interactive look into how spiritualism drove scientific inquiry 
                  in the late 19th and early 20th century </p>
-            <!-- <p class="small"> please expand your screen for the best experience </p> -->
+            <a href="/sts1700f/#main-background" class="link"> <p class="small"> click to scroll down </p> </a>
+                
         </header>
 
-        <div class="main-background">
+        <div id="main-background">
             <div class="icon-col">
+                <div class="select-message">
+                    <p>select an item <br> to bring it to the lab</p>
+                    <p> click again to remove</p>
+                </div>
                 <div class="icon-div" onclick="openBlurb('candle')">
                     <img class="icon" src="icons/sts-candle.png" alt="">
                     <p> candle </p>
@@ -58,25 +63,98 @@
                 </div>
                 <div class="icon-div" onclick="openBlurb('chair')">
                     <img class="icon" src="icons/sts-chair.png" alt="">
-                    <p> furniture </p>
+                    <p> chair </p>
                 </div>
             </div>
             <div class="reveal-items">
                 <div id="candle-item">
-                    <p>hello</p>
-                    <img width="24%" src="icons/shad-candle.png" alt="">
+                    <img width="24%" src="icons/shad-candle.png" alt="" onclick="openBlurb('candle')">
+                    <div class="blurb"> 
+                        <h4 style="margin-top: 0; padding-top: 0;"> FLAME COMMUNICATION </h4>
+                        <p>
+                            Candles and flames were often treated as a connection to the spirit world 
+                            during séances, where some mediums claimed to 
+                            receive messages through the movements and flickers of a flame. 
+                        </p>
+                        <p>
+                            William Barrett, a prominent British physicist and psychical researcher, conducted 
+                            experiments to investigate whether flames exhibited reactions indicative of 
+                            spirit communication or influence. 
+                            His studies of <a href="https://babel.hathitrust.org/cgi/pt?id=umn.31951000614122v;view=1up;seq=238 " target="_blank" class="w-link">"Sensitive Flames"</a> applied rigorous scientific methodology to 
+                            the effect of sound on flame movement, and his findings sparked further research 
+                            into phenomena that challenged conventional understanding of matter.
+                        </p>
+                        <img class="portrait" src="icons/will-barrett.png" alt="">
+                        <p> Sir William Fletcher Barrett </p>
+                    </div>
                 </div>
                 <div id="flowers-item">
-                    <p>hello</p>
-                    <img width="24%" src="icons/shad-flowr.png" alt="">
+                    <img width="24%" src="icons/shad-flowr.png" alt="" onclick="openBlurb('flowers')">
+                    <div class="blurb">
+                        <h4 style="margin-top: 0; padding-top: 0;"> SPIRIT FLOWERS </h4>
+
+                        <p>
+                            During séances, mediums often claimed the ability to summon objects from the spirit 
+                            world as manifestations of spiritual presence. One medium, Agnes Guppy-Volckam, 
+                            claimed to be able to apport flowers and fruit.  In an instance documented by Alfred 
+                            Russel Wallace, Guppy-Volckman sat for four hours in a small, 
+                            gas-lighted room in Wallace's home. Afterwards, a abundant array of flowers 
+                            appeared on the bare table, including anemones, tulips, chrysanthemums, 
+                            Chinese primroses, and ferns. 
+                    
+                        </p>
+                        <p>
+                            <a class="w-link" href="https://people.wku.edu/charles.smith/wallace/S243.htm" target="_blank">
+                                Wallace described the flowers
+                            </a>
+                             as 
+                            "absolutely fresh as if just gathered from a conservatory," 
+                            "covered with a fine cold dew", and perfectly intact.
+                        </p>
+                        <img class="portrait" src="icons/AWallace.jpg" alt="">
+                        <p> Alfred Russell Wallace </p>
+                    </div>
                 </div>
                 <div id="book-item">
-                    <p>hello</p>
-                    <img width="24%" src="icons/shad-book.png" alt="">
+                    <img width="24%" src="icons/shad-book.png" alt="" onclick="openBlurb('book')">
+                    <div class="blurb">
+                        <h4 style="margin-top: 0; padding-top: 0;"> AUTOMATIC WRITING / TELEPATHY </h4>
+
+                        <p>
+                            The phenomenon of automatic writing in séances describes when words and messages would 
+                            wrote themselves on a page, seemingly controlled by an unseen force while 
+                            the medium was in a trance-like state. This was just one example of activities that spiritualists linked 
+                            to telepathic communication with a higher consciousness.
+                        </p>
+                        <p>
+                            Edward Fournier d'Albe, an Irish chemist and physicist, was intrigued by such manifestations 
+                            and their implications on consciousness and an immortality. <a class="w-link" href="https://archive.org/details/newlightonimmort00fourrich">His research</a> dove into the concept 
+                            of "psychomeres", particules that he believed composed the human soul 
+                            and could potentially condense back into a physical form after death to 
+                            then facilitate telepathic communication with bodies in the physical world.
+                        </p>
+                        <img class="portrait" src="icons/edward-dalbe.webp" alt="">
+                        <p> Edmund Edward Fournier d'Albe </p>
+                    </div>
                 </div>
                 <div id="chair-item">
-                    <p>hello</p>
-                    <img width="30%" src="icons/shad-chair.png" alt="">
+                    <img width="30%" src="icons/shad-chair.png" alt="" onclick="openBlurb('chair')">
+                    <div class="blurb">
+                        <h4 style="margin-top: 0; padding-top: 0;"> IMPOSSIBLE MOVEMENT </h4>
+
+                        <p>
+                            Impossible movement such as levitating tables or the teleportation 
+                            of furniture was commonly observed during séances and heavily studied 
+                            by spiritualists and scientists who
+                            sought to understand their mechanisms and implications. 
+                        </p>
+                        <p>
+                            Scientists conducted controlled experiements within séance settings to 
+                            carefully observe the movements of objects and rigorously document observations with written, photographic, 
+                            and audio evidence to try and rule out explanations of fraud or mechanical trickery. 
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
