@@ -129,7 +129,7 @@ h4 {
 header {
     padding-top: 10rem;
     text-align: left;
-    width: 75%;
+    width: 80%;
 }
 
 .header-top {
@@ -151,5 +151,16 @@ header {
     outline-color:#625c98;
     height: 0px;
     align-self: center;
+}
+
+.content {
+    width: 80%;
+    font-family: Inter;
+    font-size: 14px;
+    padding-bottom: 8rem;
+}
+
+.content > p {
+    line-height: 1.4rem;
 }
 
