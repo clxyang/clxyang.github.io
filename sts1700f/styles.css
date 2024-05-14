@@ -244,6 +244,10 @@ header {
     width: 33%;
 }
 
+#last-icon {
+    margin-bottom: 50%;
+}
+
 .icon-div:hover {
     -webkit-transform: scale(1.15);
 }
@@ -310,6 +314,28 @@ header {
     .screensize-message {
         display: block;
     }
+}
+
+#wallace-q, #barrett-q, #dalbe-q, #chair-q {
+    text-align: center;
+    margin-left: -14rem;
+    margin-right: -14rem;
+    font-family: "Mulish";
+    font-style: italic; 
+    color: rgb(203, 211, 212);
+    padding-top: 60%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+#wallace-q.side, #barrett-q.side, #dalbe-q.side, #chair-q.side {
+    margin-right: 5rem;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+#wallace-q.hide, #barrett-q.hide, #dalbe-q.hide, #chair-q.hide {
+    display: none;
 }
 
 /* GENERAL */
