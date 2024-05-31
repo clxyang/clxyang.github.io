@@ -52,7 +52,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    position:absolute;
+    position:fixed;
     top: 0px;
     z-index: 999;
 
@@ -167,9 +167,12 @@ html {
   }
 
 section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     width: 80%;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
+
 
 /* CONTACT SIDEBAR ====================================================================== */
 
