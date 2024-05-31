@@ -504,25 +504,31 @@ section {
 }
 
 .blurb-link {
-    width: 28.8px;
-    height: 28.5px;
-    margin-top: -1rem;
-    margin-left: -0.3rem;
-    z-index: 5;
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    /* z-index: 5; */
 
-    background-color: white;
+    /* background-color: #f6f5f4; */
     border-radius: 20px;
+    display: none;
 }
 
-.fa-circle-chevron-down {
-    color: #765e86;
+@media screen and (min-width: 1218px) {
+    .blurb-link {
+        display: block;
+    }
+}
+
+.fa-chevron-down {
+    color: #c7b2c2;
 
     font-size: 1.8rem;
     transition: all 0.1s linear;
 }
 
-.fa-circle-chevron-down:hover {
-    color: #9d8da7;
+.fa-chevron-down:hover {
+    color: #6c5a69;
 }
 
 /* OTHER-PROJECTS ====================================================================== */
@@ -537,18 +543,19 @@ section {
     /* justify-content: center; */
     flex-wrap: wrap;
     align-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 
 .w-item {
     width: 300px;
     height: 280px;
-    filter: drop-shadow(6px 6px 5px #1f1b3b);
+    /* filter: drop-shadow(0px 3px 3px #464164); */
     padding: 1rem;
-    background-color:#c1b3c9;
+    background-color:#dfcee1e0;
     border-radius: 0.3rem;
     transition: all 0.2s linear;
+    position: relative;
 }
 
 .w-text {
@@ -561,11 +568,12 @@ section {
 
 .w-title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     grid-row-start: 1;
     /* text-align: center; */
     padding-left: 1rem;
-    filter: drop-shadow(5px 5px 6px #ad4b99);
+    filter: drop-shadow(5px 5px 6px #d652bc);
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -581,7 +589,7 @@ section {
 }
 
 .w-label {
-    position: fixed;
+    position: absolute;
     right: 10%;
     bottom: 2%;
     font-size: 14px;
