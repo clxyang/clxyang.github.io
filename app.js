@@ -39,7 +39,7 @@ function toggleNavBar() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const theWords = ["making choreo for my dance team", "studying CS at Brown", "playing the NYT Strands"];
+    const theWords = ["learning a new dance", "studying CS at Brown", "playing the NYT Strands"];
     let theBox = document.getElementById("word");
     console.log(theBox);
     let idx = 0;
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const theWords = ["making choreo for my dance team", "studying CS at Brown", "playing the NYT Strands"];
+    const theWords = ["learning a new dance", "studying CS at Brown", "playing the NYT Strands"];
     let theBox = document.getElementById("mobile-word");
     console.log(theBox);
     let idx = 0;
