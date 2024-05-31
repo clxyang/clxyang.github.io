@@ -37,3 +37,89 @@ function toggleNavBar() {
 
     lastScrollY = window.scrollY;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const theWords = ["making choreo for my dance team", "studying CS at Brown", "playing the NYT Strands"];
+    let theBox = document.getElementById("word");
+    console.log(theBox);
+    let idx = 0;
+
+    const writeBox = (word) => {
+        const pieces = word.split("");
+        let letterIndex = 0;
+        let isDeleting = false;
+    
+        const writeLetters = () => {
+            if (isDeleting) {
+                if (letterIndex >= 0) {
+                    theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
+                    letterIndex--;
+                    setTimeout(writeLetters, 80); // Adjust the timeout for deletion speed
+                } else {
+                    isDeleting = false;
+                    switchWord();
+                }
+            } else {
+                if (letterIndex <= pieces.length) {
+                    theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
+                    letterIndex++;
+                    setTimeout(writeLetters, 80); // Adjust the timeout for typing speed
+                } else {
+                    isDeleting = true;
+                    setTimeout(writeLetters, 2000); // Adjust the timeout before starting deletion
+                }
+            }
+        };
+    
+        writeLetters();
+    };
+    const switchWord = () => {
+        idx = idx >= theWords.length - 1 ? 0 : idx + 1;
+        writeBox(theWords[idx]);
+    };
+
+    switchWord();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const theWords = ["making choreo for my dance team", "studying CS at Brown", "playing the NYT Strands"];
+    let theBox = document.getElementById("mobile-word");
+    console.log(theBox);
+    let idx = 0;
+
+    const writeBox = (word) => {
+        const pieces = word.split("");
+        let letterIndex = 0;
+        let isDeleting = false;
+    
+        const writeLetters = () => {
+            if (isDeleting) {
+                if (letterIndex >= 0) {
+                    theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
+                    letterIndex--;
+                    setTimeout(writeLetters, 80); // Adjust the timeout for deletion speed
+                } else {
+                    isDeleting = false;
+                    switchWord();
+                }
+            } else {
+                if (letterIndex <= pieces.length) {
+                    theBox.innerHTML = pieces.slice(0, letterIndex).join("") + "<span class='cursor'></span>";
+                    letterIndex++;
+                    setTimeout(writeLetters, 80); // Adjust the timeout for typing speed
+                } else {
+                    isDeleting = true;
+                    setTimeout(writeLetters, 2000); // Adjust the timeout before starting deletion
+                }
+            }
+        };
+    
+        writeLetters();
+    };
+    const switchWord = () => {
+        idx = idx >= theWords.length - 1 ? 0 : idx + 1;
+        writeBox(theWords[idx]);
+    };
+
+    switchWord();
+});
