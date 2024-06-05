@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-text);
-    font-family: 'Inter', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: normal;
 }
 
@@ -22,25 +22,25 @@ html {
     flex-direction: column;
     align-items: center;
     margin-bottom: 8rem;
-    margin-top: 5rem;
 }
 
 .section-title {
     padding-top: 0;
     margin-top: 1rem;
     margin-bottom: 5px;
-
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
     font-size: 25px;
-    font-weight: 600;
 }
 
-/* .section-line {
+.section-line {
     outline-style: groove;
     outline-width: 0.9px;
     outline-color: var(--nav-purple);
     height: 0px;
     align-self: center;
-} */
+}
 
 /* NAVBAR ====================================================================== */
 
@@ -172,7 +172,6 @@ section {
     width: 80%;
     padding-top: 4rem;
 }
-
 
 /* CONTACT SIDEBAR ====================================================================== */
 
