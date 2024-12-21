@@ -14,6 +14,7 @@ body {
 }
 
 html {
+    scroll-padding-top: 80px;
     scroll-behavior: smooth;
 }
 
@@ -40,6 +41,14 @@ html {
     outline-color: var(--nav-purple);
     height: 0px;
     align-self: center;
+}
+
+.list-title {
+    margin-bottom: -5px;
+}
+
+.all-lists ul li, .all-lists ol li {
+    margin-bottom: 5px;
 }
 
 /* NAVBAR ====================================================================== */
