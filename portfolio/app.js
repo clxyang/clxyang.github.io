@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector(".navbar-toggle");
+    const mobilePopupMenu = document.getElementById("mobile-popup-menu");
+
+    toggleButton.addEventListener("click", () => {
+        console.log(mobilePopupMenu.classList.toggle("active"));
+        console.log("toggling!");
+    });
+});
+
 function openBlurb(name) {
     let blurb = document.getElementById(name + "-blurb");
     let item = document.getElementById(name + "-item");

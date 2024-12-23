@@ -59,12 +59,12 @@ html {
     height: 80px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.1rem;
-    position:fixed;
+    position: fixed;
     top: 0px;
     z-index: 999;
-
     background-color: #f6f5f4;
     transition: all 0.3s linear;
 }
@@ -104,76 +104,71 @@ html {
     transition: all 0.2s ease;
 }
 
-#resume-link {
-    color:rgb(183, 95, 196);
-}
-
-.navbar-links:hover {
-    color: rgb(198, 164, 208);
-}
-
-#resume-link:hover {
-    color: #ea9ce9;
-    transition: all 0.2s ease;
-}
-
-#navbar.hidden {
-    top: -80px;
-}
-
-.hamburger-icon {
-    right: 0;
-    margin-top: auto;
-    display: block;
+.navbar-toggle {
     cursor: pointer;
+    margin-right: 20px;
+    display: none;
 }
 
-.hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.open #bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open #bar2 {
-    opacity: 0;
-}
-
-.open #bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.mobile-menu {
+.bar {
     display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #6a3e85;
+    margin: 5px auto;
+    transition: 0.3s;
+}
+
+#mobile-popup-menu {
     position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
+    top: 70px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 3px solid #7f49a0;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    display: none;
+    z-index: 1000;
+}
+
+#mobile-popup-menu.active {
+    display: block;
+}
+
+#mobile-popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-popup-menu li {
+    margin: 10px 0;
+}
+
+#mobile-popup-menu a {
+    text-decoration: none;
+    color: #6a3e85;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+#mobile-popup-menu a:hover {
+    color: rgb(198, 164, 208);
 }
 
 @media screen and (max-width: 600px) {
     .navbar-menu {
         display: none;
     }
-    .navbar-logo {
-        display: none;
+    .navbar-toggle {
+        display: block;
+        padding-right: 20px;
     }
-  }
+    #navbar-logo {
+        padding-left: 40px;
+    }
+}
 
 section {
     padding-top: 2.5rem;
